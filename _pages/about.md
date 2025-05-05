@@ -47,7 +47,43 @@ In: Proceedings of the 40th International Conference on Machine Learning, Hawaii
 
 ## Conference Papers
 
-- **CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search** <br>
+- **CGI: Identifying Conditional Generative Models with Example Images.** <br>
+**Zhi Zhou**, Hao-Zhe Tan, Peng-Xiao Song, Lan-Zhe Guo. <br>
+In: Proceedings of the 34th International Joint Conference on Artificial Intelligence, Montreal, 2025. <br>
+<span style="color:blue">IJCAI 2025.</span>
+<span style="color:grey">CCF-A.</span>
+
+- **Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models.** <br>
+Xiao-Wen Yang, Jie-Jing Shao, Lan-Zhe Guo, Bo-Wen Zhang, **Zhi Zhou**, Lin-Han Jia, Wang-Zhou Dai, Yu-Feng Li. <br>
+In: Proceedings of the 34th International Joint Conference on Artificial Intelligence, Montreal, 2025. <br>
+<span style="color:blue">IJCAI 2025.</span>
+<span style="color:grey">CCF-A.</span>
+
+- **Fully Test-Time Adaptation for Feature Decrement in Tabular Data.** <br>
+Zi-Jian Cheng, Zi-Yi Jia, Kun-Yang Yu, **Zhi Zhou**, Lan-Zhe Guo. <br>
+In: Proceedings of the 34th International Joint Conference on Artificial Intelligence, Montreal, 2025. <br>
+<span style="color:blue">IJCAI 2025.</span>
+<span style="color:grey">CCF-A.</span>
+
+- **BMIP: Bi-directional Modality Interaction Prompt Learning for VLM.** <br>
+Song-Lin Lv, Yu-Yang Chen, **Zhi Zhou**, Ming Yang, Lan-Zhe Guo. <br>
+In: Proceedings of the 34th International Joint Conference on Artificial Intelligence, Montreal, 2025. <br>
+<span style="color:blue">IJCAI 2025.</span>
+<span style="color:grey">CCF-A.</span>
+
+- **Pre-Trained Vision-Language Model Selection and Reuse for Downstream Tasks.** <br>
+Hao-Zhe Tan, **Zhi Zhou**, Lan-Zhe Guo, Yu-feng Li. <br>
+In: Proceedings of the 32nd International Conference on Machine Learning, Vancouver, 2025. <br>
+<span style="color:blue">ICML 2025.</span>
+<span style="color:grey">CCF-A.</span>
+
+- **TabFSBench: Tabular Benchmark for Feature Shifts in Open Environment.** <br>
+Zi-Jian Cheng, Ziyi Jia, **Zhi Zhou**, Lan-Zhe Guo, Yu-Feng Li. <br>
+In: Proceedings of the 42nd International Conference on Machine Learning, Vancouver, 2025. <br>
+<span style="color:blue">ICML 2025.</span>
+<span style="color:grey">CCF-A.</span>
+
+- **CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search.** <br>
 Xiao-Wen Yang, **Zhi Zhou**, Haiming Wang, Aoxue Li, Wen-Da Wei, Hui Jin, Zhenguo Li, Yu-Feng Li. <br>
 In: Proceedings of the 13th International Conference on Learning Representations, Singapore, 2025. <br>
 <span style="color:blue">ICLR 2025.</span>
