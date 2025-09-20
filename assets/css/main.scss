@@ -46,10 +46,8 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
-
+    // border-bottom: 1px #efefef solid;
+    padding: 0em 0 1em 0;
     .paper-box-image{
         justify-content: center;
         display: flex;
@@ -70,15 +68,16 @@
     @include breakpoint($medium) {
         .paper-box-image{
             justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
+            padding-left: 2em;
+            padding-right: 2em;
+            max-width: 25%;
             order: 1;
         }
         
         .paper-box-text{
             justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
+            padding-left: 0em;
+            max-width: 74%;
             order: 2;
         }
 

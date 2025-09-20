@@ -3,28 +3,20 @@ main:
   - title: "About Me"
     url: "/#-about-me"
 
-  # - title: "News"
-  #   url: "/#-news"
+  - title: "Recent News"
+    url: "/#-recent-news"
 
-  - title: "Publication"
-    url: "/#-publication-"
+  - title: "Selected Works"
+    url: "/#-selected-works-publication-list-"
 
-  - title: "Software"
-    url: "/#-software"
+  - title: "Publication List"
+    url: "/publications"
 
-  - title: "Project"
-    url: "/#-project"
+  - title: "Academics"
+    url: "/academics"
 
-  - title: "Honor"
-    url: "/#-honor"
+  - title: "Projects"
+    url: "/projects"
 
-  - title: "Activity"
-    url: "/#-activity"
-
-  - title: "Education"
-    url: "/#-education"
-
-  # - title: "Invited Talks"
-  #   url: "/#-invited-talks"
 
 
