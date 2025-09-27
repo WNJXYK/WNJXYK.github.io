@@ -33,13 +33,14 @@ Shi-Yu Tian<sup>*</sup>, <u><b>Zhi Zhou<sup>*</sup></b></u>, Kun-Yang Yu, Ming Y
 In: Proceedings of the Conference on Empirical Methods in Natural Language Processing, Suzhou, 2025. <br>
 <span style="color:blue">EMNLP 2025.</span>
 <span style="color:red">CCF-B, Oral Presentation.</span>
+[[Paper]](https://arxiv.org/abs/2406.05055)
 
 - **AutoEvolve: Automatically Evolving Queries for Applicable and Scalable Retrieval-Augmented Generation Benchmarking.** <br>
 Ding-Chu Zhang, Xiaowen Zhang, Yue Fei, Renjun Hu, Xiao-Wen Yang, <u><b>Zhi Zhou</b></u>, Baixuan Li, Yu-Feng Li, Xing Shi, Wei Lin. <br>
 <span style="color:blue">Findings @ EMNLP 2025.</span>
 
 - **CGI: Identifying Conditional Generative Models with Example Images.** <br>
-<u><b>Zhi Zhou<sup>*</sup></b></u>, Hao-Zhe Tan<sup>*</sup>, Peng-Xiao Song, Lan-Zhe Guo. <br>
+<u><b>Zhi Zhou</b></u>, Hao-Zhe Tan, Peng-Xiao Song, Lan-Zhe Guo. <br>
 In: Proceedings of the 34th International Joint Conference on Artificial Intelligence, Montreal, 2025. <br>
 <span style="color:blue">IJCAI 2025.</span>
 <span style="color:red">CCF-A.</span>
@@ -58,12 +59,14 @@ Zi-Jian Cheng, Zi-Yi Jia, Kun-Yang Yu, <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo. <br>
 In: Proceedings of the 34th International Joint Conference on Artificial Intelligence, Montreal, 2025. <br>
 <span style="color:blue">IJCAI 2025.</span>
 <span style="color:red">CCF-A.</span>
+[[Paper]](https://www.ijcai.org/proceedings/2025/550)
 
 - **BMIP: Bi-directional Modality Interaction Prompt Learning for VLM.** <br>
 Song-Lin Lv, Yu-Yang Chen, <u><b>Zhi Zhou</b></u>, Ming Yang, Lan-Zhe Guo. <br>
 In: Proceedings of the 34th International Joint Conference on Artificial Intelligence, Montreal, 2025. <br>
 <span style="color:blue">IJCAI 2025.</span>
 <span style="color:red">CCF-A.</span>
+[[Paper]](https://www.ijcai.org/proceedings/2025/655)
 
 - **Pre-Trained Vision-Language Model Selection and Reuse for Downstream Tasks.** <br>
 Hao-Zhe Tan, <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, Yu-feng Li. <br>
