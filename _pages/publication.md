@@ -83,7 +83,7 @@ In: Proceedings of the 42nd International Conference on Machine Learning, Vancou
 [[Paper]](https://openreview.net/forum?id=ab8yOxtKWj)
 
 - **LawGPT: Knowledge-Guided Data Generation and Its Application to Legal LLM** <br>
-<u><b>Zhi Zhou<sup>*</sup></b></u>, Kun-Yang Yu<sup>*</sup>, Shi-Yu Tian<sup>*</sup>, Xiao-Wen Yang<sup>*</sup>, Jiang-Xin Shi<sup>*</sup>, Peng-Xiao Song, Yi-Xuan Jin, Lan-Zhe Guo, Yu-Feng Li. <br>
+<u><b>Zhi Zhou</b></u>, Kun-Yang Yu, Shi-Yu Tian, Xiao-Wen Yang, Jiang-Xin Shi, Peng-Xiao Song, Yi-Xuan Jin, Lan-Zhe Guo, Yu-Feng Li. <br>
 <span style="color:blue">SCI-FM Workshop @ ICLR 2025.<span>
 [[Paper]](https://arxiv.org/pdf/2502.06572)
 
@@ -95,7 +95,7 @@ In: Proceedings of the 13th International Conference on Learning Representations
 [[Paper]](https://openreview.net/forum?id=VQwI055flA) 
 
 - **Fully Test-time Adaptation for Tabular Data.** <br>
-<u><b>Zhi Zhou<sup>*</sup></b></u>, Kun-Yang Yu<sup>*</sup>, Lan-Zhe Guo, Yu-Feng Li. <br>
+<u><b>Zhi Zhou</b></u>, Kun-Yang Yu, Lan-Zhe Guo, Yu-Feng Li. <br>
 In: Proceedings of the 39th AAAI conference on Artificial Intelligence, Philadelphia, 2025. <br>
 <span style="color:blue">AAAI 2025.</span>
 <span style="color:red">CCF-A.</span>
@@ -199,7 +199,7 @@ In: Advances in Neural Information Processing Systems Datasets and Benchmarks, N
 [[Code]](https://github.com/microsoft/Semi-supervised-learning)
 
 - **STEP: Out-of-Distribution Detection in the Presence of Limited In-Distribution Labeled Data.** <br>
-<u><b>Zhi Zhou<sup>*</sup></b></u>, Lan-Zhe Guo<sup>*</sup>, Zhan-Zhan Cheng, Yu-Feng Li, Shi-Liang Pu.<br>
+<u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, Zhan-Zhan Cheng, Yu-Feng Li, Shi-Liang Pu.<br>
 In: Advances in Neural Information Processing Systems, Virtual Conference, 2021. Page: 29168-29180. <br>
 <span style="color:blue">NeurIPS 2021.</span>
 <span style="color:red">CCF-A.</span>
@@ -242,7 +242,7 @@ Science CHINA Information Science Letter, 67: 117101, 2024. <br>
 [[Code]](https://github.com/YGZWQZD/LAMDA-SSL) 
 
 - **Towards Robust Test-Time Adaptation for Open-Set Recognition** <br>
-<u><b>Zhi Zhou<sup>*</sup></b></u>, Ding-Chu Zhang<sup>*</sup>, Yu-Feng Li, Min-Ling Zhang. <br>
+<u><b>Zhi Zhou</b></u>, Ding-Chu Zhang, Yu-Feng Li, Min-Ling Zhang. <br>
 Journal of Software (软件学报), 35(4), 2024. <br>
 <span style="color:blue">JOS.</span>
 <span style="color:red">CCF-A.</span>
