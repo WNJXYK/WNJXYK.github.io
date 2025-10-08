@@ -90,7 +90,12 @@ In: Proceedings of the 39th AAAI conference on Artificial Intelligence, Philadel
 <span style="font-size:18px"><b>A Theoretical Study on Bridging Internal Probability and Self-Consistency for LLM Reasoning.</b></span><br>
 <u><b>Zhi Zhou</b></u>, Yuhao Tan, Zenan Li, Yuan Yao, Lan-Zhe Guo, Yu-Feng Li, Xiaoxing Ma. <br>
 In: Advances in Neural Information Processing Systems, San Diego, 2025. <br>
-<span style="color:red">CCF A.</span> [[Paper]](https://arxiv.org/abs/2502.00511)
+<span style="color:red">CCF A.</span> 
+[[Paper]](https://arxiv.org/abs/2502.00511)
+[[Project]](https://zhouz.dev/RPC)
+[[Code]](https://github.com/WNJXYK/RPC/)
+[[Data]](https://huggingface.co/collections/WNJXYK/mathematical-llm-reasoning-paths-68e4c4e32e3ad7fa0fcad77a)
+[[Demo]](https://huggingface.co/spaces/WNJXYK/RPC)
 </div>
 </div>
 

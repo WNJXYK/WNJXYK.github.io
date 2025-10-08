@@ -27,6 +27,10 @@ In: Advances in Neural Information Processing Systems, San Diego, 2025. <br>
 <span style="color:blue">NeurIPS 2025.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://arxiv.org/abs/2502.00511)
+[[Project]](https://zhouz.dev/RPC)
+[[Code]](https://github.com/WNJXYK/RPC/)
+[[Data]](https://huggingface.co/collections/WNJXYK/mathematical-llm-reasoning-paths-68e4c4e32e3ad7fa0fcad77a)
+[[Demo]](https://huggingface.co/spaces/WNJXYK/RPC)
 
 - **VCSearch: Bridging the Gap Between Well-Defined and Ill-Defined Problems in Mathematical Reasoning.** <br>
 Shi-Yu Tian<sup>*</sup>, <u><b>Zhi Zhou<sup>*</sup></b></u>, Kun-Yang Yu, Ming Yang, Lin-Han Jia, Lan-Zhe Guo, Yu-Feng Li. <br>
