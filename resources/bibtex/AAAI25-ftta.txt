@@ -2,6 +2,6 @@
     author       = {Zhou, Zhi and Yu, Kun-Yang and Guo, Lan-Zhe and Li, Yu-Feng},
     title        = {Fully Test-time Adaptation for Tabular Data},
     booktitle    = {Proceedings of the 39th AAAI Conference on Artificial Intelligence},
-    pages.       = {23027-23035},
+    pages        = {23027-23035},
     year         = {2025}
 }
