@@ -53,6 +53,7 @@ In: Proceedings of the 40th International Conference on Machine Learning, Hawaii
 [[Poster]](../resources/2023/ODS-Poster.pdf)
 [[Slide]](../resources/2023/ODS-Slide.pdf)
 [[Video]](https://icml.cc/virtual/2023/poster/24841)
+[[BibTeX]](../resources/bibtex/ICML23-ods.txt)
 </div>
 </div>
 
@@ -66,6 +67,7 @@ In: Proceedings of the 41th International Conference on Machine Learning, Vienna
 [[Paper]](https://arxiv.org/pdf/2406.00345.pdf) 
 [[Code]](https://zhouz.dev/DeCoOp)
 [[Poster]](../resources/2024/DeCoOp-Poster.pdf)
+[[BibTeX]](../resources/bibtex/ICML24-decoop.txt)
 </div>
 </div>
 
@@ -79,6 +81,7 @@ In: Proceedings of the 39th AAAI conference on Artificial Intelligence, Philadel
 [[Paper]](https://arxiv.org/abs/2412.10871) 
 [[Project]](https://zhouz.dev/FTTA)
 [[Poster]](../resources/2025/FTTA-Poster.pdf)
+[[BibTeX]](../resources/bibtex/AAAI25-ftta.txt)
 </div>
 </div>
 
@@ -90,7 +93,7 @@ In: Proceedings of the 39th AAAI conference on Artificial Intelligence, Philadel
 <span style="font-size:18px"><b>A Theoretical Study on Bridging Internal Probability and Self-Consistency for LLM Reasoning.</b></span><br>
 <u><b>Zhi Zhou</b></u>, Yuhao Tan, Zenan Li, Yuan Yao, Lan-Zhe Guo, Yu-Feng Li, Xiaoxing Ma. <br>
 In: Advances in Neural Information Processing Systems, San Diego, 2025. <br>
-<span style="color:red">CCF A.</span> 
+<span style="color:red">CCF A.</span> <br>
 [[Paper]](https://arxiv.org/abs/2502.00511)
 [[Project]](https://zhouz.dev/RPC)
 [[Code]](https://github.com/WNJXYK/RPC/)
@@ -105,7 +108,8 @@ In: Advances in Neural Information Processing Systems, San Diego, 2025. <br>
 <span style="font-size:18px"><b>Neuro-Symbolic Data Generation for Math Reasoning.</b></span> <br>
 Zenan Li<sup>*</sup>, <u><b>Zhi Zhou<sup>*</sup></b></u>, Yuan Yao, Xian Zhang, Yu-Feng Li, Chun Cao, Fan Yang, Xiaoxing Ma. <br>
 In: Advances in Neural Information Processing Systems, Vancouver, 2024. <br>
-<span style="color:red">CCF A.</span> 
+<span style="color:red">CCF A.</span> <br>
 [[Paper]](https://arxiv.org/abs/2412.04857)
+[[BibTeX]](../resources/bibtex/NeurIPS24-nesy.txt)
 </div>
 </div>

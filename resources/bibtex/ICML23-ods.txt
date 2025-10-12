@@ -1,0 +1,7 @@
+@inproceedings{zhou23ods,
+  title     = {{ODS}: Test-Time Adaptation in the Presence of Open-World Data Shift},
+  author    = {Zhou, Zhi and Guo, Lan-Zhe and Jia, Lin-Han and Zhang, Dingchu and Li, Yu-Feng},
+  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+  pages     = {42574--42588},
+  year      = {2023}
+}

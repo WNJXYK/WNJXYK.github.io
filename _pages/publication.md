@@ -106,6 +106,7 @@ In: Proceedings of the 39th AAAI conference on Artificial Intelligence, Philadel
 [[Paper]](https://arxiv.org/abs/2412.10871) 
 [[Project]](https://zhouz.dev/FTTA)
 [[Poster]](../resources/2025/FTTA-Poster.pdf)
+[[BibTeX]](../resources/bibtex/AAAI25-ftta.txt)
 
 - **Neuro-Symbolic Data Generation for Math Reasoning.** <br>
 Zenan Li<sup>*</sup>, <u><b>Zhi Zhou<sup>*</sup></b></u>, Yuan Yao, Xian Zhang, Yu-Feng Li, Chun Cao, Fan Yang, Xiaoxing Ma. <br>
@@ -113,6 +114,7 @@ In: Advances in Neural Information Processing Systems, Vancouver, 2024. <br>
 <span style="color:blue">NeurIPS 2024.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://arxiv.org/abs/2412.04857)
+[[BibTeX]](../resources/bibtex/NeurIPS24-nesy.txt)
 
 - **LSPAN: Spectrally Localized Augmentation for Graph Consistency Learning.** <br>
 Heng-Kai Zhang, Yi-Ge Zhang, <u><b>Zhi Zhou</b></u>, Yu-Feng Li. <br>
@@ -129,6 +131,7 @@ In: Proceedings of the 41th International Conference on Machine Learning, Vienna
 [[Paper]](https://arxiv.org/pdf/2406.00345.pdf) 
 [[Code]](https://zhouz.dev/DeCoOp)
 [[Poster]](../resources/2024/DeCoOp-Poster.pdf)
+[[BibTeX]](../resources/bibtex/ICML24-decoop.txt)
 
 - **Long-tail Learning with Foundation Model: Heavy Fine-tuning Hurts.** <br>
 Jiang-Xin Shi, Tong Wei, <u><b>Zhi Zhou</b></u>, Jie-Jing Shao, Xin-Yan Han, Yu-Feng Li. <br>
@@ -171,6 +174,7 @@ In: Proceedings of the 40th International Conference on Machine Learning, Hawaii
 [[Poster]](../resources/2023/ODS-Poster.pdf)
 [[Slide]](../resources/2023/ODS-Slide.pdf) 
 [[Video]](https://icml.cc/virtual/2023/poster/24841)
+[[BibTeX]](../resources/bibtex/ICML23-ods.txt)
 
 - **Bidirectional Adaptation for Robust Semi-Supervised Learning with Inconsistent Data Distributions.** <br>
 Lin-Han Jia, Lan-Zhe Guo, <u><b>Zhi Zhou</b></u>, Jie-Jing Shao, Yu-Ke Xiang, Yu-Feng Li. <br>

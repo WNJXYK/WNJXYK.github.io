@@ -1,0 +1,7 @@
+@inproceedings{li24nesy,
+ author = {Li, Zenan and Zhou, Zhi and Yao, Yuan and Li, Yu-Feng and Cao, Chun and Yang, Fan and Zhang, Xian and Ma, Xiaoxing},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages = {23488--23515},
+ title = {Neuro-Symbolic Data Generation for Math Reasoning},
+ year = {2024}
+}
