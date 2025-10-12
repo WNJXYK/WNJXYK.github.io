@@ -9,8 +9,8 @@
 title                    : "Zhi Zhou (周植)"
 description              : "<center>A Ph.D. Student of LAMDA Group</center>"
 repository               : "WNJXYK/WNJXYK.github.io"
-google_scholar_stats_use_cdn : true
-url : "https://zhouz.dev"
+google_scholar_stats_use_cdn : false
+
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -19,6 +19,9 @@ google_analytics_id      :  # get google_analytics_id from https://analytics.goo
 google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
 bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
 baidu_site_verification  :  "codeva-a6qPknWzt9"
+url                      : "https://zhouz.dev"
+keywords                 : "Neuro-Symbolic AI, Test-Time Adaptation, LLM Reasoning"
+canonical                : "https://zhouz.dev"
 
 # Site Author
 author:
