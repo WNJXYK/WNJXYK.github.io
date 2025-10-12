@@ -10,6 +10,7 @@ title                    : "Zhi Zhou (周植)"
 description              : "<center>A Ph.D. Student of LAMDA Group</center>"
 repository               : "WNJXYK/WNJXYK.github.io"
 google_scholar_stats_use_cdn : true
+url : "https://zhouz.dev"
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
@@ -126,6 +127,11 @@ defaults:
     values:
       layout: default
       author_profile: true
+  # exclude resources from sitemap
+  - scope:
+      path:            "resources/**/*.pdf"
+    values:
+      sitemap:         false
 
 
 # Sass/SCSS
