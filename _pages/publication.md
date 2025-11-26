@@ -28,6 +28,7 @@ In: Advances in Neural Information Processing Systems, San Diego, 2025. <br>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://arxiv.org/abs/2502.00511)
 [[Project]](https://zhouz.dev/RPC)
+[[Poster]](../resources/2025/RPC-Poster.pdf)
 [[Code]](https://github.com/WNJXYK/RPC/)
 [[Data]](https://huggingface.co/collections/WNJXYK/mathematical-llm-reasoning-paths-68e4c4e32e3ad7fa0fcad77a)
 [[Demo]](https://huggingface.co/spaces/WNJXYK/RPC)

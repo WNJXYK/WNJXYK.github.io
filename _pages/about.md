@@ -31,6 +31,7 @@ I am a final year Ph.D. student at [the Department of Computer Science and Techn
 </table>
 
 # 🎉 Recent News
+- 2025.11: One paper is accepted by AAAI 2026 about LLM reasoning paradigm!
 - 2025.09: One paper is accepted by NeurIPS 2025 about theoretical analysis of LLM reasoning!
 - 2025.08: One paper is accepted by EMNLP 2025 for oral presentation about test-time scaling of LLM reasoning!
 - 2025.01: I got my first funding: National Science Foundation for PhD Students.
@@ -96,6 +97,7 @@ In: Advances in Neural Information Processing Systems, San Diego, 2025. <br>
 <span style="color:red">CCF A.</span> <a href="https://huggingface.co/papers/2510.15444"><span style="color:red">HF #1 Paper of the Day.</span></a> <br>
 [[Paper]](https://arxiv.org/abs/2502.00511)
 [[Project]](https://zhouz.dev/RPC)
+[[Poster]](../resources/2025/RPC-Poster.pdf)
 [[Code]](https://github.com/WNJXYK/RPC/)
 [[Data]](https://huggingface.co/collections/WNJXYK/mathematical-llm-reasoning-paths-68e4c4e32e3ad7fa0fcad77a)
 [[Demo]](https://huggingface.co/spaces/WNJXYK/RPC)
