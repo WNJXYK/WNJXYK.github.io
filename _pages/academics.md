@@ -31,6 +31,8 @@ redirect_from:
 
 # 💬 Invited Talks
 - *2024.09*, Robust Test-Time Adaptation (in Chinese), "AI+X" National Outstanding Ph.D. Student Forum, Peking University.
+- *2025.01*, Preliminary Exploration of Test-Time Computing: From Test-Time Adaptation to Test-Time Scaling (in Chinese), "AI+" Outstanding Ph.D. Student Forum, Peking University.
+
 
 # 📚 Teaching
 - *2025.08 - 2025.08*, Teaching Assistant for Deep Learning, State Grid Corporation of China.
@@ -39,8 +41,9 @@ redirect_from:
 
 
 # 🎖 Awards
-- *2025.01*, National Science Foundation of China for PhD Students.
-- *2023.12*, [National Scholarship](../resources/2023/CN23-Scholarship.pdf), Nanjing University.
+- *2025.12*, National Scholarship for PhD Students, Nanjing University.
+- *2024.12*, Huawei Scholarship for PhD Students, Nanjing University. 
+- *2023.12*, [National Scholarship for PhD Students](../resources/2023/CN23-Scholarship.pdf), Nanjing University.
 - *2022.06*, [LAMDA Excellent Student Award](../resources/2022/LAMDA22-Elite.pdf), Nanjing University.
 - *2022.03*, [Tencent Scholarship](../resources/2021/Tencent2021-Scholarship.pdf), Nanjing University.
 - *2020.06*, [Top 10 College Student of the Year](../resources/U2020/JLU2019_Top10.pdf), Jilin University.

@@ -21,12 +21,19 @@ redirect_from:
 
 # 📝 Conference Papers
 
+- **Step Back to Leap Forward: Self-Backtracking for Boosting Reasoning of Language Models.** <br>
+Xiao-Wen Yang, Xuan-Yi Zhu, Wen-Da Wei, Ding-Chu Zhang, Jie-Jing Shao, <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, Yu-Feng Li. <br>
+In: Proceedings of the 40th AAAI conference on Artificial Intelligence, 2026. <br>
+<span style="color:blue">AAAI 2026.</span>
+<span style="color:red">CCF-A.</span>
+[[Paper]](https://www.arxiv.org/abs/2502.04404)
+
 - **A Theoretical Study on Bridging Internal Probability and Self-Consistency for LLM Reasoning.** <br>
 <u><b>Zhi Zhou</b></u>, Yuhao Tan, Zenan Li, Yuan Yao, Lan-Zhe Guo, Yu-Feng Li, Xiaoxing Ma. <br> 
 In: Advances in Neural Information Processing Systems, San Diego, 2025. <br>
 <span style="color:blue">NeurIPS 2025.</span>
 <span style="color:red">CCF-A.</span>
-[[Paper]](https://arxiv.org/abs/2502.00511)
+[[Paper]](https://arxiv.org/abs/2510.15444)
 [[Project]](https://zhouz.dev/RPC)
 [[Poster]](../resources/2025/RPC-Poster.pdf)
 [[Code]](https://github.com/WNJXYK/RPC/)

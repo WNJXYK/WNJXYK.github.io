@@ -34,6 +34,7 @@ A comprehensive and easy-to-use toolkit for semi-supervised learning. LAMDA-SSL 
 
 # 💻 Project
 
+- *2025.01 - 2026.12*, Robust Weakly-Supervised Learning for Open Environment (624B2068), Research Program for Young Students, NSFC.
 - *2022.09 - 2025.09*, Judgment Knowledge Recognition Technology for Document-Level Understanding, China Judicial Big Data Institute, China.
 - *2022.06 - 2023.06*, Fraud Detection System based on Weakly Supervised Learning, [Huawei](../resources/Huawei2023_Award.pdf), China.
 - *2021.10 - 2022.05*, Housing Sales Customer Rating Model Optimization, [Beike (Internship)](../resources/Beike2021.pdf), China.

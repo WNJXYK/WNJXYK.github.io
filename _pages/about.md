@@ -95,7 +95,7 @@ In: Proceedings of the 39th AAAI conference on Artificial Intelligence, Philadel
 <u><b>Zhi Zhou</b></u>, Yuhao Tan, Zenan Li, Yuan Yao, Lan-Zhe Guo, Yu-Feng Li, Xiaoxing Ma. <br>
 In: Advances in Neural Information Processing Systems, San Diego, 2025. <br>
 <span style="color:red">CCF A.</span> <a href="https://huggingface.co/papers/2510.15444"><span style="color:red">HF #1 Paper of the Day.</span></a> <br>
-[[Paper]](https://arxiv.org/abs/2502.00511)
+[[Paper]](https://arxiv.org/abs/2510.15444)
 [[Project]](https://zhouz.dev/RPC)
 [[Poster]](../resources/2025/RPC-Poster.pdf)
 [[Code]](https://github.com/WNJXYK/RPC/)
