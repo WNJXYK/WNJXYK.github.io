@@ -1,0 +1,7 @@
+@inproceedings{tan25vlmselect,
+    author    = {Tan, Hao-Zhe and Zhou, Zhi and Li, Yu-Feng and Guo, Lan-Zhe},
+    title     = {Vision-Language Model Selection and Reuse for Downstream Adaptation},
+    booktitle = {Proceedings of the 42nd International Conference on Machine Learning},
+    pages     = {58726--58738},
+    year      = {2025}
+}

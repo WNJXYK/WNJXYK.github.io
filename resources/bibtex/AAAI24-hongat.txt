@@ -1,0 +1,7 @@
+@inproceedings{zhang24hongat,
+    author    = {Zhang, Heng-Kai and Zhang, Yi-Ge and Zhou, Zhi and Li, Yu-Feng},
+    title     = {{HONGAT}: Graph Attention Networks in the Presence of High-Order Neighbors},
+    booktitle = {Proceedings of the 38th AAAI Conference on Artificial Intelligence},
+    pages     = {16750--16758},
+    year      = {2024}
+}

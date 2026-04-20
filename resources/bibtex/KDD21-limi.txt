@@ -1,0 +1,7 @@
+@inproceedings{guo21limi,
+    author    = {Guo, Lan-Zhe and Zhou, Zhi and Shao, Jie-Jing and Li, Yu-Feng},
+    title     = {Learning from Imbalanced and Incomplete Supervision with Its Application to Ride-Sharing Liability Judgment},
+    booktitle = {Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+    pages     = {487--495},
+    year      = {2021}
+}

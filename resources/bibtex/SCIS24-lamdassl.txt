@@ -1,0 +1,8 @@
+@article{jia24lamdassl,
+    author    = {Jia, Lin-Han and Guo, Lan-Zhe and Zhou, Zhi and Li, Yu-Feng},
+    title     = {{LAMDA-SSL}: A Comprehensive Semi-Supervised Learning Toolkit},
+    journal   = {Science China Information Sciences},
+    volume    = {67},
+    pages     = {117101},
+    year      = {2024}
+}

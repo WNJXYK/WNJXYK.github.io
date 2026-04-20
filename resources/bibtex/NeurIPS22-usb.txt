@@ -1,0 +1,7 @@
+@inproceedings{wang22usb,
+    author    = {Wang, Yi-Dong and Chen, Hao and Fan, Yue and Sun, Wang and Tao, Ran and Hou, Wen-Xin and Wang, Ren-Jie and Yang, Lin-Yi and Zhou, Zhi and Guo, Lan-Zhe and Qi, He-Li and Wu, Zhen and Li, Yu-Feng and Nakamura, Satoshi and Ye, Wei and Savvides, Marios and Raj, Bhiksha and Shinozaki, Takahiro and Schiele, Bernt and Wang, Jin-Dong and Xie, Xing and Zhang, Yue},
+    title     = {{USB}: A Unified Semi-supervised Learning Benchmark for Classification},
+    booktitle = {Advances in Neural Information Processing Systems Datasets and Benchmarks},
+    pages     = {3938--3961},
+    year      = {2022}
+}

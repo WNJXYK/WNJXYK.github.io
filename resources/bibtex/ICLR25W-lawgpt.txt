@@ -1,0 +1,6 @@
+@inproceedings{zhou25lawgpt,
+    author    = {Zhou, Zhi and Yu, Kun-Yang and Tian, Shi-Yu and Yang, Xiao-Wen and Shi, Jiang-Xin and Song, Peng-Xiao and Jin, Yi-Xuan and Guo, Lan-Zhe and Li, Yu-Feng},
+    title     = {{L}aw{GPT}: Knowledge-Guided Data Generation and Its Application to Legal {LLM}},
+    booktitle = {SCI-FM Workshop at the 13th International Conference on Learning Representations},
+    year      = {2025}
+}

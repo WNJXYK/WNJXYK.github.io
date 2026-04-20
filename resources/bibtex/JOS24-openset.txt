@@ -1,0 +1,8 @@
+@article{zhou24openset,
+    author    = {Zhou, Zhi and Zhang, Ding-Chu and Li, Yu-Feng and Zhang, Min-Ling},
+    title     = {Towards Robust Test-Time Adaptation for Open-Set Recognition},
+    journal   = {Journal of Software (软件学报)},
+    volume    = {35},
+    number    = {4},
+    year      = {2024}
+}

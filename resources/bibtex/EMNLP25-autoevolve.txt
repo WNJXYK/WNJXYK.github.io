@@ -1,0 +1,7 @@
+@inproceedings{zhang25autoevolve,
+    author    = {Zhang, Ding-Chu and Zhang, Xiaowen and Fei, Yue and Hu, Renjun and Yang, Xiao-Wen and Zhou, Zhi and Li, Baixuan and Li, Yu-Feng and Shi, Xing and Lin, Wei},
+    title     = {{A}uto{E}volve: Automatically Evolving Queries for Applicable and Scalable Retrieval-Augmented Generation Benchmarking},
+    booktitle = {Findings of the Association for Computational Linguistics: EMNLP 2025},
+    pages     = {7624--7639},
+    year      = {2025}
+}

@@ -1,0 +1,7 @@
+@inproceedings{zhang24adaprompt,
+    author    = {Zhang, Ding-Chu and Zhou, Zhi and Li, Yu-Feng},
+    title     = {Robust Test-Time Adaptation for Zero-Shot Prompt Tuning},
+    booktitle = {Proceedings of the 38th AAAI Conference on Artificial Intelligence},
+    pages     = {16714--16722},
+    year      = {2024}
+}

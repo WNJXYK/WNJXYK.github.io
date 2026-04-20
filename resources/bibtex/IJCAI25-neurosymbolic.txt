@@ -1,0 +1,7 @@
+@inproceedings{yang25neurosymbolic,
+    author    = {Yang, Xiao-Wen and Shao, Jie-Jing and Guo, Lan-Zhe and Zhang, Bo-Wen and Zhou, Zhi and Jia, Lin-Han and Dai, Wang-Zhou and Li, Yu-Feng},
+    title     = {Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models},
+    booktitle = {Proceedings of the 34th International Joint Conference on Artificial Intelligence},
+    pages     = {10770--10778},
+    year      = {2025}
+}

@@ -1,0 +1,10 @@
+@article{zhou24rts,
+    author    = {Zhou, Zhi and Jin, Yi-Xuan and Li, Yu-Feng},
+    title     = {Rts: Learning Robustly from Time Series Data with Noisy Label},
+    journal   = {Frontiers of Computer Science},
+    volume    = {18},
+    number    = {6},
+    pages     = {1--18},
+    articleno = {186332},
+    year      = {2024}
+}

@@ -1,0 +1,6 @@
+@inproceedings{yang25carts,
+    author    = {Yang, Xiao-Wen and Zhou, Zhi and Wang, Haiming and Li, Aoxue and Wei, Wen-Da and Jin, Hui and Li, Zhenguo and Li, Yu-Feng},
+    title     = {{CARTS}: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search},
+    booktitle = {Proceedings of the 13th International Conference on Learning Representations},
+    year      = {2025}
+}

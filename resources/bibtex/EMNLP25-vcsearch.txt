@@ -1,0 +1,7 @@
+@inproceedings{tian25vcsearch,
+    author    = {Tian, Shi-Yu and Zhou, Zhi and Yu, Kun-Yang and Yang, Ming and Jia, Lin-Han and Guo, Lan-Zhe and Li, Yu-Feng},
+    title     = {{VCS}earch: Bridging the Gap Between Well-Defined and Ill-Defined Problems in Mathematical Reasoning},
+    booktitle = {Proceedings of the Conference on Empirical Methods in Natural Language Processing},
+    pages     = {12710--12731},
+    year      = {2025}
+}

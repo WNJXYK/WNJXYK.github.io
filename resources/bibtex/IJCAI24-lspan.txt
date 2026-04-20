@@ -1,0 +1,7 @@
+@inproceedings{zhang24lspan,
+    author    = {Zhang, Heng-Kai and Zhang, Yi-Ge and Zhou, Zhi and Li, Yu-Feng},
+    title     = {{LSPAN}: Spectrally Localized Augmentation for Graph Consistency Learning},
+    booktitle = {Proceedings of the 33rd International Joint Conference on Artificial Intelligence},
+    pages     = {5462--5470},
+    year      = {2024}
+}

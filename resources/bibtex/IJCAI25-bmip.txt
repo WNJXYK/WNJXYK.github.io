@@ -1,0 +1,7 @@
+@inproceedings{lv25bmip,
+    author    = {Lv, Song-Lin and Chen, Yu-Yang and Zhou, Zhi and Yang, Ming and Guo, Lan-Zhe},
+    title     = {{BMIP}: Bi-directional Modality Interaction Prompt Learning for {VLM}},
+    booktitle = {Proceedings of the 34th International Joint Conference on Artificial Intelligence},
+    pages     = {5887--5895},
+    year      = {2025}
+}

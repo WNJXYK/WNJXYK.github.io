@@ -27,6 +27,7 @@ In: Proceedings of the 40th AAAI conference on Artificial Intelligence, 2026. <b
 <span style="color:blue">AAAI 2026.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://www.arxiv.org/abs/2502.04404)
+[[BibTeX]](../resources/bibtex/AAAI26-selfbacktrack.txt)
 
 - **A Theoretical Study on Bridging Internal Probability and Self-Consistency for LLM Reasoning.** <br>
 <u><b>Zhi Zhou</b></u>, Yuhao Tan, Zenan Li, Yuan Yao, Lan-Zhe Guo, Yu-Feng Li, Xiaoxing Ma. <br> 
@@ -39,6 +40,7 @@ In: Advances in Neural Information Processing Systems, San Diego, 2025. <br>
 [[Code]](https://github.com/WNJXYK/RPC/)
 [[Data]](https://huggingface.co/collections/WNJXYK/mathematical-llm-reasoning-paths-68e4c4e32e3ad7fa0fcad77a)
 [[Demo]](https://huggingface.co/spaces/WNJXYK/RPC)
+[[BibTeX]](../resources/bibtex/NeurIPS25-rpc.txt)
 
 - **VCSearch: Bridging the Gap Between Well-Defined and Ill-Defined Problems in Mathematical Reasoning.** <br>
 Shi-Yu Tian<sup>*</sup>, <u><b>Zhi Zhou<sup>*</sup></b></u>, Kun-Yang Yu, Ming Yang, Lin-Han Jia, Lan-Zhe Guo, Yu-Feng Li. <br>
@@ -46,10 +48,12 @@ In: Proceedings of the Conference on Empirical Methods in Natural Language Proce
 <span style="color:blue">EMNLP 2025.</span>
 <span style="color:red">CCF-B, Oral Presentation.</span>
 [[Paper]](https://arxiv.org/abs/2406.05055)
+[[BibTeX]](../resources/bibtex/EMNLP25-vcsearch.txt)
 
 - **AutoEvolve: Automatically Evolving Queries for Applicable and Scalable Retrieval-Augmented Generation Benchmarking.** <br>
 Ding-Chu Zhang, Xiaowen Zhang, Yue Fei, Renjun Hu, Xiao-Wen Yang, <u><b>Zhi Zhou</b></u>, Baixuan Li, Yu-Feng Li, Xing Shi, Wei Lin. <br>
 <span style="color:blue">Findings @ EMNLP 2025.</span>
+[[BibTeX]](../resources/bibtex/EMNLP25-autoevolve.txt)
 
 - **CGI: Identifying Conditional Generative Models with Example Images.** <br>
 <u><b>Zhi Zhou</b></u>, Hao-Zhe Tan, Peng-Xiao Song, Lan-Zhe Guo. <br>
@@ -58,6 +62,7 @@ In: Proceedings of the 34th International Joint Conference on Artificial Intelli
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://arxiv.org/abs/2501.13991)
 [[Poster]](../resources/2025/CGI-Poster.pdf)
+[[BibTeX]](../resources/bibtex/IJCAI25-cgi.txt)
 
 - **Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models.** <br>
 Xiao-Wen Yang, Jie-Jing Shao, Lan-Zhe Guo, Bo-Wen Zhang, <u><b>Zhi Zhou</b></u>, Lin-Han Jia, Wang-Zhou Dai, Yu-Feng Li. <br>
@@ -65,6 +70,7 @@ In: Proceedings of the 34th International Joint Conference on Artificial Intelli
 <span style="color:blue">IJCAI 2025.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://arxiv.org/abs/2508.13678)
+[[BibTeX]](../resources/bibtex/IJCAI25-neurosymbolic.txt)
 
 - **Fully Test-Time Adaptation for Feature Decrement in Tabular Data.** <br>
 Zi-Jian Cheng, Zi-Yi Jia, Kun-Yang Yu, <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo. <br>
@@ -72,6 +78,7 @@ In: Proceedings of the 34th International Joint Conference on Artificial Intelli
 <span style="color:blue">IJCAI 2025.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://www.ijcai.org/proceedings/2025/550)
+[[BibTeX]](../resources/bibtex/IJCAI25-tabtta.txt)
 
 - **BMIP: Bi-directional Modality Interaction Prompt Learning for VLM.** <br>
 Song-Lin Lv, Yu-Yang Chen, <u><b>Zhi Zhou</b></u>, Ming Yang, Lan-Zhe Guo. <br>
@@ -79,13 +86,15 @@ In: Proceedings of the 34th International Joint Conference on Artificial Intelli
 <span style="color:blue">IJCAI 2025.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://www.ijcai.org/proceedings/2025/655)
+[[BibTeX]](../resources/bibtex/IJCAI25-bmip.txt)
 
 - **Pre-Trained Vision-Language Model Selection and Reuse for Downstream Tasks.** <br>
 Hao-Zhe Tan, <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, Yu-feng Li. <br>
-In: Proceedings of the 32nd International Conference on Machine Learning, Vancouver, 2025. <br>
+In: Proceedings of the 42nd International Conference on Machine Learning, Vancouver, 2025. <br>
 <span style="color:blue">ICML 2025.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://openreview.net/forum?id=bvrsrvo0Mt)
+[[BibTeX]](../resources/bibtex/ICML25-vlmselect.txt)
 
 - **TabFSBench: Tabular Benchmark for Feature Shifts in Open Environment.** <br>
 Zi-Jian Cheng, Ziyi Jia, <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, Yu-Feng Li. <br>
@@ -93,18 +102,21 @@ In: Proceedings of the 42nd International Conference on Machine Learning, Vancou
 <span style="color:blue">ICML 2025.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://openreview.net/forum?id=ab8yOxtKWj)
+[[BibTeX]](../resources/bibtex/ICML25-tabfsbench.txt)
 
 - **LawGPT: Knowledge-Guided Data Generation and Its Application to Legal LLM** <br>
 <u><b>Zhi Zhou</b></u>, Kun-Yang Yu, Shi-Yu Tian, Xiao-Wen Yang, Jiang-Xin Shi, Peng-Xiao Song, Yi-Xuan Jin, Lan-Zhe Guo, Yu-Feng Li. <br>
 <span style="color:blue">SCI-FM Workshop @ ICLR 2025.<span>
 [[Paper]](https://arxiv.org/pdf/2502.06572)
+[[BibTeX]](../resources/bibtex/ICLR25W-lawgpt.txt)
 
 - **CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search.** <br>
 Xiao-Wen Yang, <u><b>Zhi Zhou</b></u>, Haiming Wang, Aoxue Li, Wen-Da Wei, Hui Jin, Zhenguo Li, Yu-Feng Li. <br>
 In: Proceedings of the 13th International Conference on Learning Representations, Singapore, 2025. <br>
 <span style="color:blue">ICLR 2025.</span>
 <span style="color:red">CAAI-A.</span>
-[[Paper]](https://openreview.net/forum?id=VQwI055flA) 
+[[Paper]](https://openreview.net/forum?id=VQwI055flA)
+[[BibTeX]](../resources/bibtex/ICLR25-carts.txt)
 
 - **Fully Test-time Adaptation for Tabular Data.** <br>
 <u><b>Zhi Zhou</b></u>, Kun-Yang Yu, Lan-Zhe Guo, Yu-Feng Li. <br>
@@ -129,7 +141,8 @@ Heng-Kai Zhang, Yi-Ge Zhang, <u><b>Zhi Zhou</b></u>, Yu-Feng Li. <br>
 In: Proceedings of the Thirty-Third International Joint Conference on Artificial Intelligence, Jeju, 2024. Page: 5462-5470.<br>
 <span style="color:blue">IJCAI 2024.</span>
 <span style="color:red">CCF-A.</span>
-[[Paper]](https://www.ijcai.org/proceedings/2024/0604.pdf) 
+[[Paper]](https://www.ijcai.org/proceedings/2024/0604.pdf)
+[[BibTeX]](../resources/bibtex/IJCAI24-lspan.txt)
 
 - **DeCoOp: Robust Prompt Tuning with Out-of-Distribution Detection.** <br>
 <u><b>Zhi Zhou</b></u>, Ming Yang, Jiang-Xin Shi, Lan-Zhe Guo, Yu-Feng Li. <br>
@@ -147,6 +160,7 @@ In: Proceedings of the 41th International Conference on Machine Learning, Vienna
 <span style="color:blue">ICML 2024.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://arxiv.org/abs/2309.10019)
+[[BibTeX]](../resources/bibtex/ICML24-longtail.txt)
 
 - **Realistic Evaluation of Semi-supervised Learning Algorithms in Open Environments.** <br> 
 Lin-Han Jia, Lan-Zhe Guo, <u><b>Zhi Zhou</b></u>, Yu-Feng Li. <br>
@@ -154,6 +168,7 @@ In: Proceedings of the 12th International Conference on Learning Representations
 <span style="color:blue">ICLR 2024.</span>
 <span style="color:red">CAAI-A.</span>
 [[Paper]](https://openreview.net/forum?id=RvUVMjfp8i)
+[[BibTeX]](../resources/bibtex/ICLR24-ssl.txt)
 
 - **HONGAT: Graph Attention Networks in the Presence of High-Order Neighbors**. <br>
 Heng-Kai Zhang, Yi-Ge Zhang, <u><b>Zhi Zhou</b></u>, Yu-Feng Li. <br>
@@ -161,6 +176,7 @@ In: Proceedings of the 38th AAAI conference on Artificial Intelligence, Vancouve
 <span style="color:blue">AAAI 2024.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/29615/31042)
+[[BibTeX]](../resources/bibtex/AAAI24-hongat.txt)
 
 - **Robust Test-Time Adaptation for Zero-Shot Prompt Tuning.** <br>
 Ding-Chu Zhang<sup>*</sup>, <u><b>Zhi Zhou<sup>*</sup></b></u>, Yu-Feng Li. <br>
@@ -170,7 +186,8 @@ In: Proceedings of the 38th AAAI conference on Artificial Intelligence, Vancouve
 [[Paper]](https://ojs.aaai.org/index.php/AAAI/article/view/29611/31034) 
 [[Code]](https://github.com/zhangdingchu/Adaprompt)
 [[Poster]](../resources/2024/AdaPrompt-Poster.pdf)
-[[Slide]](../resources/2024/AdaPrompt-Slide.pdf) 
+[[Slide]](../resources/2024/AdaPrompt-Slide.pdf)
+[[BibTeX]](../resources/bibtex/AAAI24-adaprompt.txt)
 
 - **ODS: Test-Time Adaptation in the Presence of Open-World Data Shift.** <br>
 <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, Lin-Han Jia, Ding-Chu Zhang, Yu-Feng Li. <br>
@@ -190,7 +207,8 @@ In: Proceedings of the 40th International Conference on Machine Learning, Hawaii
 <span style="color:blue">ICML 2023.</span>
 <span style="color:red">CCF-A, Oral Presentation.</span>
 [[Paper]](https://openreview.net/forum?id=dZA7WtCULT)
-[[Code]](https://github.com/YGZWQZD/LAMDA-SSL) 
+[[Code]](https://github.com/YGZWQZD/LAMDA-SSL)
+[[BibTeX]](../resources/bibtex/ICML23-bidirectional.txt)
 
 - **Identifying Useful Learnwares for Heterogeneous Label Spaces.** <br>
 Lan-Zhe Guo<sup>*</sup>, <u><b>Zhi Zhou<sup>*</sup></b></u>, Yu-Feng Li, Zhi-Hua Zhou. <br>
@@ -199,12 +217,14 @@ In: Proceedings of the 40th International Conference on Machine Learning, Hawaii
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://proceedings.mlr.press/v202/guo23l/guo23l.pdf)
 [[Poster]](../resources/2023/Learnware-Poster.pdf)
+[[BibTeX]](../resources/bibtex/ICML23-learnware.txt)
 
 - **You Only Submit One Image to Find the Most Suitable Generative Model** <br>
 <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, Pengxiao Song, Yu-Feng Li. <br>
 <span style="color:blue">Diffusion Workshop @ NeurIPS 2023.</span>
 [[Page]](https://neurips.cc/virtual/2023/74865)
 [[Paper]](https://arxiv.org/abs/2412.12232)
+[[BibTeX]](../resources/bibtex/NeurIPS23W-genmodel.txt)
 
 - **USB: A Unified Semi-supervised Learning Benchmark for Classification.** <br>
 Yi-Dong Wang, Hao Chen, Yue Fan, Wang Sun, Ran Tao, Wen-Xin Hou, Ren-Jie Wang, Lin-Yi Yang, <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, He-Li Qi, Zhen Wu, Yu-Feng Li, Satoshi Nakamura, Wei Ye, Marios Savvides, Bhiksha Raj, Takahiro Shinozaki, Bernt Schiele, Jin-Dong Wang, Xing Xie, Yue Zhang.<br>
@@ -213,6 +233,7 @@ In: Advances in Neural Information Processing Systems Datasets and Benchmarks, N
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://openreview.net/forum?id=QeuwINa96C)
 [[Code]](https://github.com/microsoft/Semi-supervised-learning)
+[[BibTeX]](../resources/bibtex/NeurIPS22-usb.txt)
 
 - **STEP: Out-of-Distribution Detection in the Presence of Limited In-Distribution Labeled Data.** <br>
 <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, Zhan-Zhan Cheng, Yu-Feng Li, Shi-Liang Pu.<br>
@@ -223,6 +244,7 @@ In: Advances in Neural Information Processing Systems, Virtual Conference, 2021.
 [[Code]](https://www.lamda.nju.edu.cn/code_STEP.ashx) 
 [[Poster]](../resources/2021/STEP-Poster.png)
 [[Slide]](../resources/2021/STEP-Slide.pdf)
+[[BibTeX]](../resources/bibtex/NeurIPS21-step.txt)
 
 - **Learning from Imbalanced and Incomplete Supervision with Its Application to Ride-Sharing Liability Judgment.** <br>
 Lan-Zhe Guo<sup>*</sup>, <u><b>Zhi Zhou<sup>*</sup></b></u>, Jie-Jing Shao, Yu-Feng Li, and DiDi Collaborators.<br>
@@ -230,6 +252,7 @@ In: Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Dat
 <span style="color:blue">KDD 2021.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](../resources/2021/KDD2021-LIMI.pdf)
+[[BibTeX]](../resources/bibtex/KDD21-limi.txt)
 
 - **RECORD: Resource Constrained Semi-Supervised Learning under Distribution Shift.** <br>
 Lan-Zhe Guo, <u><b>Zhi Zhou</b></u>, and Yu-Feng Li.<br>
@@ -238,6 +261,7 @@ In: Proceedings of the 26th ACM SIGKDD Conference on Knowledge Discovery and Dat
 <span style="color:red">CCF-A.</span>
 [[Paper]](../resources/2020/KDD20-RECORD.pdf)
 [[Code]](https://www.lamda.nju.edu.cn/code_RECORD.ashx)
+[[BibTeX]](../resources/bibtex/KDD20-record.txt)
 
 # 📖 Journal Papers
 
@@ -247,7 +271,8 @@ Frontiers of Computer Science, 18(6): 186332, 2024. <br>
 <span style="color:blue">FCS.</span>
 <span style="color:red">CCF-B.</span>
 [[Paper]](https://journal.hep.com.cn/fcs/EN/10.1007/s11704-023-3200-z)
-[[Code]](https://github.com/WNJXYK/Rts) 
+[[Code]](https://github.com/WNJXYK/Rts)
+[[BibTeX]](../resources/bibtex/FCS24-rts.txt)
 
 - **LAMDA-SSL: A Comprehensive Semi-Supervised Learning Toolkit.** <br>
 Lin-Han Jia, Lan-Zhe Guo, <u><b>Zhi Zhou</b></u>, Yu-Feng Li. <br>
@@ -255,7 +280,8 @@ Science CHINA Information Science Letter, 67: 117101, 2024. <br>
 <span style="color:blue">SCIS Letter.</span>
 <span style="color:red">CCF-A.</span>
 [[Arxiv]](https://arxiv.org/pdf/2208.04610.pdf)
-[[Code]](https://github.com/YGZWQZD/LAMDA-SSL) 
+[[Code]](https://github.com/YGZWQZD/LAMDA-SSL)
+[[BibTeX]](../resources/bibtex/SCIS24-lamdassl.txt)
 
 - **Towards Robust Test-Time Adaptation for Open-Set Recognition** <br>
 <u><b>Zhi Zhou</b></u>, Ding-Chu Zhang, Yu-Feng Li, Min-Ling Zhang. <br>
@@ -263,3 +289,4 @@ Journal of Software (软件学报), 35(4), 2024. <br>
 <span style="color:blue">JOS.</span>
 <span style="color:red">CCF-A.</span>
 [[Paper]](http://www.jos.org.cn/jos/article/abstract/7009?st=article_issue&bsh_bid=5968787845)
+[[BibTeX]](../resources/bibtex/JOS24-openset.txt)
