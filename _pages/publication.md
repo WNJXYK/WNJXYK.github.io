@@ -21,6 +21,34 @@ redirect_from:
 
 # 📝 Conference Papers
 
+- **On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective.** <br>
+<u><b>Zhi Zhou</b></u>, Ming Yang, Shi-Yu Tian, Kun-Yang Yu, Lan-Zhe Guo, Yu-Feng Li. <br>
+In: Proceedings of the 43rd International Conference on Machine Learning, 2026. <br>
+<span style="color:blue">ICML 2026.</span>
+<span style="color:red">CCF-A.</span>
+[[BibTeX]](../resources/bibtex/ICML26-ttalearnability.txt)
+
+- **Quantitative Estimation of Target Task Performance from Unsupervised Pretext Task in Semi/Self-Supervised Learning.** <br>
+Lin-Han Jia, Siyu Han, Wen-Chao Hu, Jie-Jing Shao, Wen-Da Wei, <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, Yu-Feng Li. <br>
+In: Proceedings of the 43rd International Conference on Machine Learning, 2026. <br>
+<span style="color:blue">ICML 2026.</span>
+<span style="color:red">CCF-A.</span>
+[[BibTeX]](../resources/bibtex/ICML26-pretexttask.txt)
+
+- **VT-Bench: A Unified Benchmark for Visual-Tabular Multi-Modal Learning.** <br>
+Ziyi Jia, Zi-Jian Cheng, Xinyue Zhang, Kun-Yang Yu, <u><b>Zhi Zhou</b></u>, Yu-Feng Li, Lan-Zhe Guo. <br>
+In: Proceedings of the 43rd International Conference on Machine Learning, 2026. <br>
+<span style="color:blue">ICML 2026.</span>
+<span style="color:red">CCF-A.</span>
+[[BibTeX]](../resources/bibtex/ICML26-vtbench.txt)
+
+- **FormalML: A Benchmark for Evaluating Formal Subgoal Completion in Machine Learning Theory.** <br>
+Xiao-Wen Yang, Zihao Zhang, Jianuo Cao, <u><b>Zhi Zhou</b></u>, Zenan Li, Lan-Zhe Guo, Yuan Yao, Taolue Chen, Yu-Feng Li, Xiaoxing Ma. <br>
+In: Proceedings of the 14th International Conference on Learning Representations, 2026. <br>
+<span style="color:blue">ICLR 2026.</span>
+<span style="color:red">CCF-A.</span>
+[[BibTeX]](../resources/bibtex/ICLR26-formalml.txt)
+
 - **Step Back to Leap Forward: Self-Backtracking for Boosting Reasoning of Language Models.** <br>
 Xiao-Wen Yang, Xuan-Yi Zhu, Wen-Da Wei, Ding-Chu Zhang, Jie-Jing Shao, <u><b>Zhi Zhou</b></u>, Lan-Zhe Guo, Yu-Feng Li. <br>
 In: Proceedings of the 40th AAAI conference on Artificial Intelligence, 2026. <br>

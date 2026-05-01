@@ -31,10 +31,11 @@ I am a final year Ph.D. student at [the Department of Computer Science and Techn
 </table>
 
 # 🎉 Recent News
+- 2026.05: Three papers are accepted by ICML 2026 about visual-tabular learning, semi-supervised learning, and test-time adaptation learnability!
+- 2026.01: One paper is accepted by ICLR 2026 about formal subgoal completion benchmark for machine learning theory!
 - 2025.11: One paper is accepted by AAAI 2026 about LLM reasoning paradigm!
 - 2025.09: One paper is accepted by NeurIPS 2025 about theoretical analysis of LLM reasoning!
 - 2025.08: One paper is accepted by EMNLP 2025 for oral presentation about test-time scaling of LLM reasoning!
-- 2025.01: I got my first funding: National Science Foundation for PhD Students.
 
 # 📝 Selected Works (<a href="/publications">Publication List</a>) <a href='https://scholar.google.com/citations?user=VzvP5a8AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>
 
