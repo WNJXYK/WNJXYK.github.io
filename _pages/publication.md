@@ -17,7 +17,7 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<span >* denotes the co-first authors</span>
+<span >* denotes the co-first authors, † denotes the corresponding authors</span>
 
 # 📝 Conference Papers
 
@@ -26,6 +26,8 @@ redirect_from:
 In: Proceedings of the 43rd International Conference on Machine Learning, 2026. <br>
 <span style="color:blue">ICML 2026.</span>
 <span style="color:red">CCF-A.</span>
+[[Paper]](https://arxiv.org/abs/2605.28057)
+[[Project]](https://zhouz.dev/TTA-Learnability/)
 [[BibTeX]](../resources/bibtex/ICML26-ttalearnability.txt)
 
 - **Quantitative Estimation of Target Task Performance from Unsupervised Pretext Task in Semi/Self-Supervised Learning.** <br>
@@ -56,6 +58,13 @@ In: Proceedings of the 40th AAAI conference on Artificial Intelligence, 2026. <b
 <span style="color:red">CCF-A.</span>
 [[Paper]](https://www.arxiv.org/abs/2502.04404)
 [[BibTeX]](../resources/bibtex/AAAI26-selfbacktrack.txt)
+
+- **NeSy-Route: A Neuro-Symbolic Benchmark for Constrained Route Planning in Remote Sensing.** <br>
+Ming Yang, <u><b>Zhi Zhou<sup>†</sup></b></u>, Shi-Yu Tian, Kun-Yang Yu, Lan-Zhe Guo, Yu-Feng Li<sup>†</sup>. <br>
+In: Proceedings of the European Conference on Computer Vision, 2026. <br>
+<span style="color:blue">ECCV 2026.</span>
+<span style="color:red">CCF-B.</span>
+[[BibTeX]](../resources/bibtex/ECCV26-nesyroute.txt)
 
 - **A Theoretical Study on Bridging Internal Probability and Self-Consistency for LLM Reasoning.** <br>
 <u><b>Zhi Zhou</b></u>, Yuhao Tan, Zenan Li, Yuan Yao, Lan-Zhe Guo, Yu-Feng Li, Xiaoxing Ma. <br> 
