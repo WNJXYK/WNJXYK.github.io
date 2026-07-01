@@ -31,6 +31,7 @@ I am a final year Ph.D. student at [the Department of Computer Science and Techn
 </table>
 
 # 🎉 Recent News
+- 2026.07: One paper is accepted by ECCV 2026 about neuro-symbolic benchmark for constrained route planning in remote sensing!
 - 2026.05: Three papers are accepted by ICML 2026 about visual-tabular learning, semi-supervised learning, and test-time adaptation learnability!
 - 2026.01: One paper is accepted by ICLR 2026 about formal subgoal completion benchmark for machine learning theory!
 - 2025.11: One paper is accepted by AAAI 2026 about LLM reasoning paradigm!
