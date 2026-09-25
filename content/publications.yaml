@@ -39,7 +39,7 @@ papers:
     type: conference
     topic: Agent learning
     venue: EMNLP 2026
-    img: images/paper-logo/EMNLP26-SkillShift.png
+    img: images/paper-logo/EMNLP26-SkillShift.png?v=2
     title: 'SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents.'
     authors: Boyu Chen, Zhi Zhou†, Yu-Feng Li†.
     tags:
@@ -58,7 +58,7 @@ papers:
     topic: Adaptive learning
     cite: VzvP5a8AAAAJ:blknAaTinKkC
     venue: ICML 2026
-    img: images/paper-logo/ICML26-Theory.png
+    img: images/paper-logo/ICML26-Theory.png?v=2
     title: 'On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective.'
     authors: Zhi Zhou, Ming Yang, Shi-Yu Tian, Kun-Yang Yu, Lan-Zhe Guo, Yu-Feng Li†.
     tags:
