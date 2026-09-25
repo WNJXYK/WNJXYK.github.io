@@ -39,6 +39,8 @@ Static files live in `public/` and are copied unchanged to the site root:
 
 Fields ending in `_html`, fields named `html` or `text`, and `content/research.html` are trusted authored HTML. Other values are escaped by Astro.
 
+For new images referenced by content YAML, place the file under `public/images/` and write its site-root path in YAML, for example `public/images/paper-logo/MyPaper.png` with `img: images/paper-logo/MyPaper.png`. Files kept only under the repository-level `images/` directory are not copied to the deployed site automatically.
+
 ### Add a publication
 
 1. Add the paper to `content/publications.yaml` with a unique `id`.
@@ -101,6 +103,8 @@ npm run preview  # 预览生产构建
 - `public/assets/`：现有主题、Bootstrap 和字体
 
 以 `_html` 结尾的字段、名为 `html` 或 `text` 的字段，以及 `content/research.html` 会作为可信 HTML 输出；其他普通字段由 Astro 自动转义。
+
+在 YAML 中新增图片时，请把文件放在 `public/images/` 下，并使用网站根路径，例如文件 `public/images/paper-logo/MyPaper.png` 对应 `img: images/paper-logo/MyPaper.png`。只放在仓库根目录 `images/` 下的文件不会自动发布。
 
 ### Cloudflare Pages 部署
 
