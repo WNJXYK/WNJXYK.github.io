@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentSection from '../components/ContentSection.astro';
+import Timeline from '../components/Timeline.astro';
+import { projects, rootUrl } from '../data/content';
+import { isExternal } from '../lib/site';
+const schema = {
+  '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Projects - Zhi Zhou', url: 'https://zhouz.dev/projects/', about: { '@id': 'https://zhouz.dev/#person' },
+  mainEntity: { '@type': 'ItemList', itemListElement: projects.software.map((project, index) => ({ '@type': 'ListItem', position: index + 1, item: { '@type': 'SoftwareSourceCode', name: project.name, description: project.description, url: project.links.find((link) => link.label === 'GitHub')?.url || project.links[0]?.url } })) },
+};
+---
+<BaseLayout title="Projects - Zhi Zhou" description="Software and research projects by Zhi Zhou, including LawGPT, LAMDA-SSL, and weakly-supervised learning research projects." page="projects" schema={schema} keywords={['LawGPT', 'LAMDA-SSL', 'semi-supervised learning', 'weakly-supervised learning']}>
+  <h1 class="visually-hidden">Projects - Zhi Zhou (周植)</h1>
+  <div id="projects-body">
+    <ContentSection title="Software">
+      {projects.software.map((project) => <div class="pub-card">
+        {project.img && <div class="thumb"><img src={rootUrl(project.img)} alt={project.name} loading="lazy" /></div>}
+        <div class="pub-body"><div class="proj-head"><b class="ttl proj-name">{project.name}</b>{project.badge && <span class="tag">{project.badge}</span>}</div><span class="lk">{project.links.map((link, index) => <Fragment><a href={rootUrl(link.url)} target={isExternal(link.url) ? '_blank' : undefined} rel={isExternal(link.url) ? 'noopener noreferrer' : undefined}>{link.label}</a>{index < project.links.length - 1 && <span class="sep"> · </span>}</Fragment>)}</span><p class="proj-desc">{project.description}</p></div>
+      </div>)}
+    </ContentSection>
+    <ContentSection title="Research Projects"><Timeline items={projects.research} /></ContentSection>
+  </div>
+</BaseLayout>

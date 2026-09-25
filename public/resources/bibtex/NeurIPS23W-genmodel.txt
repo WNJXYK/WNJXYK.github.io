@@ -1,0 +1,6 @@
+@inproceedings{zhou23genmodel,
+    author    = {Zhou, Zhi and Guo, Lan-Zhe and Song, Pengxiao and Li, Yu-Feng},
+    title     = {You Only Submit One Image to Find the Most Suitable Generative Model},
+    booktitle = {Diffusion Workshop at the 37th Conference on Neural Information Processing Systems},
+    year      = {2023}
+}

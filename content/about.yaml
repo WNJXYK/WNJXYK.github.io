@@ -1,0 +1,9 @@
+# Home page About section.
+lead_html: I am a final-year Ph.D. student at the Department of Computer Science and Technology of <a href="https://www.nju.edu.cn/">Nanjing University</a>, advised by Professor <a href="https://cs.nju.edu.cn/liyf/index.htm">Yu-Feng Li (李宇峰)</a>, and a member of the <a href="https://www.lamda.nju.edu.cn/CH.MainPage.ashx">LAMDA Group</a> led by Professor <a href="https://cs.nju.edu.cn/zhouzh/index.htm">Zhi-Hua Zhou (周志华)</a>.
+education:
+  - date: 2022 – Present
+    html: Ph.D. in Computer Science, <a href="https://cs.nju.edu.cn/">Nanjing University</a> <span class="bio-note">(transferred from the M.Sc. program after the second year)</span>
+  - date: 2020 – 2022
+    html: M.Sc. study in Computer Science, <a href="https://cs.nju.edu.cn/">Nanjing University</a>
+  - date: 2016 – 2020
+    html: B.Sc. in Computer Science, Tang Aoqing Honors Program, <a href="http://ccst.jlu.edu.cn/">Jilin University</a>

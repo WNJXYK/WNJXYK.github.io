@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Sidebar from '../components/Sidebar.astro';
+import ContentSection from '../components/ContentSection.astro';
+import Publication from '../components/Publication.astro';
+import { about, news, publications, research, selected, site } from '../data/content';
+import { scholarUrl, totalCitationBadge } from '../lib/site';
+
+const paperMap = new Map(publications.papers.map((paper) => [paper.id, paper]));
+const selectedGroups = selected.groups.map((group) => ({ ...group, papers: group.papers.map((id) => paperMap.get(id)).filter(Boolean) }));
+const schema = {
+  '@context': 'https://schema.org', '@type': 'Person', '@id': 'https://zhouz.dev/#person',
+  name: site.profile.name, alternateName: site.profile.name_cn, url: 'https://zhouz.dev/',
+  image: 'https://zhouz.dev/images/zhouz.jpg', jobTitle: site.profile.role,
+  email: site.contacts.find((contact) => contact.href?.startsWith('mailto:'))?.href?.replace(/^mailto:/, ''),
+  affiliation: [{ '@type': 'CollegeOrUniversity', name: 'Nanjing University', url: 'https://www.nju.edu.cn/' }, { '@type': 'Organization', name: 'LAMDA Group', url: 'https://www.lamda.nju.edu.cn/' }],
+  address: { '@type': 'PostalAddress', addressLocality: 'Nanjing', addressCountry: 'CN' },
+  sameAs: site.contacts.map((contact) => contact.href).filter((href) => href?.startsWith('http')),
+  knowsAbout: ['Test-time adaptation', 'Test-time scaling', 'LLM reasoning', 'Weakly-supervised learning', 'Neuro-symbolic AI'],
+};
+---
+<BaseLayout title="Zhi Zhou (周植)" description="Zhi Zhou is a Ph.D. candidate at LAMDA Group, Nanjing University, working on test-time intelligence, weakly-supervised learning, and neuro-symbolic AI." page="home" schema={schema} showSidebar>
+  <Fragment slot="sidebar"><Sidebar /></Fragment>
+  <h1 class="visually-hidden">Zhi Zhou (周植)</h1>
+  <ContentSection title="About">
+    <div id="about-body">
+      <p class="lead" set:html={about.lead_html} />
+      <table class="bio"><tbody>{about.education.map((item) => <tr><td>{item.date}</td><td set:html={item.html} /></tr>)}</tbody></table>
+    </div>
+  </ContentSection>
+  <ContentSection title="Research">
+    <div id="research-body" set:html={research} />
+  </ContentSection>
+  <ContentSection title="Recent News">
+    <div class="news"><ul id="news-list">{news.items.map((item) => <li><span class="date">{item.date}</span><span set:html={item.text} /></li>)}</ul></div>
+  </ContentSection>
+  <section id="selected">
+    <h2>Selected Publications
+      <a class="cite-link" href={scholarUrl()} aria-label="Google Scholar citations"><img class="cite-badge" src={totalCitationBadge()} alt="citations" /></a>
+      <a class="more" href="/publications/">full list →</a><span class="rule"></span>
+    </h2>
+    <p class="hint">* equal contribution &nbsp;·&nbsp; ✉ corresponding author</p>
+    <div id="selected-list">{selectedGroups.map((group) => <Fragment><h3 class="pub-h3">{group.topic}</h3>{group.papers.map((paper) => paper && <Publication publication={paper} variant="card" showCitation />)}</Fragment>)}</div>
+  </section>
+</BaseLayout>

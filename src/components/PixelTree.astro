@@ -1,0 +1,52 @@
+<div class="pixel-tree-art" aria-hidden="true">
+  <div class="pixel-tree-bough">
+    <img
+      src="/images/pixel-tree-autumn.png"
+      alt=""
+      width="1024"
+      height="1536"
+      decoding="async"
+      draggable="false"
+    />
+  </div>
+
+  <div class="pixel-tree-ground" aria-hidden="true">
+    <i class="pixel-tree-grass pixel-tree-grass-a"></i>
+    <i class="pixel-tree-grass pixel-tree-grass-b"></i>
+    <i class="pixel-tree-grass pixel-tree-grass-c"></i>
+    <i class="pixel-tree-grass pixel-tree-grass-d"></i>
+  </div>
+
+  <!-- A few separated leaves make the breeze legible without drawing attention away from the page. -->
+  <div class="pixel-tree-leaf-field" aria-hidden="true">
+    <i class="pixel-tree-leaf pixel-tree-leaf-a"></i>
+    <i class="pixel-tree-leaf pixel-tree-leaf-b"></i>
+    <i class="pixel-tree-leaf pixel-tree-leaf-c"></i>
+    <i class="pixel-tree-leaf pixel-tree-leaf-d"></i>
+    <i class="pixel-tree-leaf pixel-tree-leaf-e"></i>
+  </div>
+</div>
+
+<script>
+  const treeScene = document.querySelector<HTMLElement>('.pixel-tree-scene');
+  const siteFooter = document.querySelector<HTMLElement>('#site-footer');
+
+  if (treeScene && siteFooter) {
+    let frame = 0;
+
+    const syncTreeGround = () => {
+      frame = 0;
+      const footerTop = siteFooter.getBoundingClientRect().top;
+      const lift = Math.max(0, window.innerHeight - footerTop);
+      treeScene.style.setProperty('--tree-bottom-lift', `${Math.round(lift)}px`);
+    };
+
+    const scheduleTreeGround = () => {
+      if (!frame) frame = window.requestAnimationFrame(syncTreeGround);
+    };
+
+    syncTreeGround();
+    window.addEventListener('scroll', scheduleTreeGround, { passive: true });
+    window.addEventListener('resize', scheduleTreeGround, { passive: true });
+  }
+</script>

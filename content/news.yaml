@@ -1,0 +1,38 @@
+# Home page Recent News. The text field accepts trusted inline HTML.
+items:
+  - date: '2026.09'
+    text: Three papers accepted by <b>EMNLP 2026</b> — phsical and web agents, symbolic feature engineering.
+  - date: '2026.07'
+    text: One paper accepted by <b>ECCV 2026</b> — a neuro-symbolic benchmark for constrained route planning in remote sensing.
+  - date: '2026.05'
+    text: Three papers accepted by <b>ICML 2026</b> — visual-tabular learning, semi-supervised learning, and test-time adaptation learnability.
+  - date: '2026.01'
+    text: One paper accepted by <b>ICLR 2026</b> — a formal subgoal-completion benchmark for machine learning theory.
+  - date: '2025.11'
+    text: One paper accepted by <b>AAAI 2026</b> — an LLM reasoning paradigm.
+  - date: '2025.09'
+    text: One paper accepted by <b>NeurIPS 2025</b> — a theoretical analysis of LLM reasoning.
+  - date: '2025.08'
+    text: One paper accepted by <b>EMNLP 2025</b> for oral presentation — test-time scaling of LLM reasoning.
+  - date: '2025.05'
+    text: Two papers accepted by <b>ICML 2025</b> — vision-language model selection & reuse, and a tabular feature-shift benchmark.
+  - date: '2025.04'
+    text: Four papers accepted by <b>IJCAI 2025</b> — generative model identification, a neuro-symbolic reasoning survey, tabular test-time adaptation, and prompt learning for VLMs.
+  - date: '2025.01'
+    text: One paper accepted by <b>ICLR 2025</b> — neural theorem proving with diversified tactic calibration.
+  - date: '2025.01'
+    text: Awarded a research grant from the <b>NSFC</b> Research Program for Young Students — <i>Robust Weakly-Supervised Learning for Open Environment</i> (624B2068).
+  - date: '2024.12'
+    text: One paper accepted by <b>AAAI 2025</b> — fully test-time adaptation for tabular data.
+  - date: '2024.09'
+    text: One paper accepted by <b>NeurIPS 2024</b> — neuro-symbolic data generation for math reasoning.
+  - date: '2024.05'
+    text: Two papers accepted by <b>ICML 2024</b> — robust prompt tuning with OOD detection, and long-tail learning with foundation models.
+  - date: '2024.04'
+    text: One paper accepted by <b>IJCAI 2024</b> — spectrally localized augmentation for graph consistency learning.
+  - date: '2024.01'
+    text: One paper accepted by <b>ICLR 2024</b> — realistic evaluation of semi-supervised learning in open environments.
+  - date: '2023.12'
+    text: Two papers accepted by <b>AAAI 2024</b> — robust test-time adaptation and high-order graph attention networks.
+  - date: '2023.04'
+    text: Three papers (two Oral) accepted by <b>ICML 2023</b> — open-world test-time adaptation, bidirectional semi-supervised learning, and identifying useful learnwares.

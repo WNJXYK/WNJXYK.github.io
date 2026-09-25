@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 620" role="img" aria-labelledby="framework-title framework-desc">
+  <title id="framework-title">Reliable intelligence across constructed and open worlds</title>
+  <desc id="framework-desc">Weakly-supervised learning acquires transferable capabilities from imperfect evidence in a constructed learning world. Test-time intelligence adapts and reasons in an open deployment world. Neuro-symbolic AI structures knowledge, constraints, generation, composition, search, and verification across both stages, while deployment feedback returns to training.</desc>
+
+  <defs>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#14172b" flood-opacity="0.09"/>
+    </filter>
+    <marker id="arrow-ink" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#25304c"/>
+    </marker>
+    <marker id="arrow-gold" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#b07d20"/>
+    </marker>
+    <marker id="arrow-feedback" viewBox="0 0 10 10" refX="8.4" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 10 5 0 10Z" fill="#9a2a2a"/>
+    </marker>
+    <style>
+      text{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;fill:#232530;letter-spacing:0}
+      .figure-title{font-size:24px;font-weight:700;fill:#14172b}
+      .figure-subtitle{font-size:13px;fill:#726d60}
+      .world-title{font-size:14px;font-weight:700;fill:#14172b}
+      .world-subtitle{font-size:11.5px;fill:#726d60}
+      .step{font-size:11px;font-weight:700;fill:#fff}
+      .chip{font-size:9.5px;font-weight:700}
+      .node-kicker{font-size:10px;font-weight:700}
+      .node-title{font-size:20px;font-weight:700;fill:#14172b}
+      .node-copy{font-size:12.5px;fill:#4c4a43}
+      .output{font-size:10.5px;font-weight:700}
+      .bridge-label{font-size:10px;font-weight:700;fill:#25304c}
+      .gap-label{font-size:10px;font-style:italic;fill:#9a2a2a}
+      .layer-title{font-size:15px;font-weight:700;fill:#14172b}
+      .layer-subtitle{font-size:11px;font-style:italic;fill:#78652f}
+      .layer-stage{font-size:10px;font-weight:700;fill:#8a641d}
+      .layer-copy{font-size:11.5px;fill:#4c4638}
+      .feedback-label{font-size:11px;font-style:italic;fill:#8c3834}
+    </style>
+  </defs>
+
+  <rect width="1080" height="620" fill="#fbfaf5"/>
+
+  <text x="38" y="38" class="figure-title">Reliable Intelligence Across Constructed and Open Worlds</text>
+  <text x="38" y="63" class="figure-subtitle">Learn from imperfect evidence  |  structure explicit knowledge  |  resolve deployment-time uncertainty</text>
+
+  <!-- Constructed learning world -->
+  <rect x="38" y="92" width="430" height="324" rx="8" fill="#f8f6ef" stroke="#d6ceb9" stroke-width="1.2"/>
+  <circle cx="65" cy="121" r="12" fill="#137b73"/>
+  <text x="65" y="125" text-anchor="middle" class="step">1</text>
+  <text x="86" y="123" class="world-title">CONSTRUCTED LEARNING WORLD</text>
+  <text x="64" y="149" class="world-subtitle">Designable in protocol, incomplete in semantics and supervision</text>
+
+  <g aria-label="Sources of imperfect training evidence">
+    <rect x="64" y="168" width="92" height="25" rx="5" fill="#e5f1ef"/>
+    <text x="110" y="184" text-anchor="middle" class="chip" fill="#137b73">PARTIAL LABELS</text>
+    <rect x="163" y="168" width="67" height="25" rx="5" fill="#f5eadf"/>
+    <text x="196.5" y="184" text-anchor="middle" class="chip" fill="#9a2a2a">NOISE</text>
+    <rect x="237" y="168" width="88" height="25" rx="5" fill="#f5ecd5"/>
+    <text x="281" y="184" text-anchor="middle" class="chip" fill="#9a6b16">IMBALANCE</text>
+    <rect x="332" y="168" width="110" height="25" rx="5" fill="#e8edf4"/>
+    <text x="387" y="184" text-anchor="middle" class="chip" fill="#315d85">SHIFTED DATA</text>
+  </g>
+
+  <g filter="url(#soft-shadow)">
+    <rect x="64" y="211" width="378" height="128" rx="8" fill="#fffefa" stroke="#ded7c6"/>
+  </g>
+  <circle cx="103" cy="250" r="24" fill="#e3f1ee"/>
+  <path d="M91 256h24M91 244h14M110 244h5" fill="none" stroke="#137b73" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="91" cy="244" r="3" fill="#137b73"/>
+  <circle cx="115" cy="244" r="3" fill="#c9b76e"/>
+  <circle cx="103" cy="256" r="3" fill="#137b73"/>
+  <text x="142" y="232" class="node-kicker" fill="#137b73">CAPABILITY ACQUISITION</text>
+  <text x="142" y="257" class="node-title">Weakly-Supervised Learning</text>
+  <text x="84" y="292" class="node-copy">Induce reliable structure from what can be observed,</text>
+  <text x="84" y="312" class="node-copy">when complete labels or specifications are unavailable.</text>
+
+  <path d="M253 339v13" stroke="#137b73" stroke-width="1.5"/>
+  <rect x="157" y="351" width="192" height="35" rx="6" fill="#e3f1ee" stroke="#b8d8d2"/>
+  <text x="253" y="373" text-anchor="middle" class="output" fill="#0e6d66">TRANSFERABLE CAPABILITY</text>
+
+  <!-- Open deployment world -->
+  <rect x="612" y="92" width="430" height="324" rx="8" fill="#f4f7f7" stroke="#bdd2ce" stroke-width="1.2"/>
+  <circle cx="639" cy="121" r="12" fill="#25304c"/>
+  <text x="639" y="125" text-anchor="middle" class="step">2</text>
+  <text x="660" y="123" class="world-title">OPEN DEPLOYMENT WORLD</text>
+  <text x="638" y="149" class="world-subtitle">Evolving inputs, tasks, resources, and delayed feedback</text>
+
+  <g aria-label="Sources of deployment-time uncertainty">
+    <rect x="638" y="168" width="63" height="25" rx="5" fill="#e5f1ef"/>
+    <text x="669.5" y="184" text-anchor="middle" class="chip" fill="#137b73">SHIFT</text>
+    <rect x="708" y="168" width="76" height="25" rx="5" fill="#f5ecd5"/>
+    <text x="746" y="184" text-anchor="middle" class="chip" fill="#9a6b16">NOVELTY</text>
+    <rect x="791" y="168" width="90" height="25" rx="5" fill="#f5eadf"/>
+    <text x="836" y="184" text-anchor="middle" class="chip" fill="#9a2a2a">NO LABELS</text>
+    <rect x="888" y="168" width="128" height="25" rx="5" fill="#e8edf4"/>
+    <text x="952" y="184" text-anchor="middle" class="chip" fill="#315d85">HARD QUERIES</text>
+  </g>
+
+  <g filter="url(#soft-shadow)">
+    <rect x="638" y="211" width="378" height="128" rx="8" fill="#fffefa" stroke="#d4dcda"/>
+  </g>
+  <circle cx="677" cy="250" r="24" fill="#e8edf4"/>
+  <circle cx="677" cy="250" r="12" fill="none" stroke="#315d85" stroke-width="1.8"/>
+  <path d="M677 231v7M677 262v7M658 250h7M689 250h7M673 254l9-9" fill="none" stroke="#315d85" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="716" y="232" class="node-kicker" fill="#315d85">RUNTIME INTELLIGENCE</text>
+  <text x="716" y="257" class="node-title">Test-Time Intelligence</text>
+  <text x="658" y="292" class="node-copy">Resolve what becomes observable only after deployment:</text>
+  <text x="658" y="312" class="node-copy">adapt, deliberate, search, reason, and verify.</text>
+
+  <path d="M827 339v13" stroke="#315d85" stroke-width="1.5"/>
+  <rect x="731" y="351" width="192" height="35" rx="6" fill="#e8edf4" stroke="#c3d0df"/>
+  <text x="827" y="373" text-anchor="middle" class="output" fill="#315d85">ADAPTIVE BEHAVIOR</text>
+
+  <!-- Capability transfer across the deployment gap -->
+  <path d="M468 270h144" fill="none" stroke="#25304c" stroke-width="2" marker-end="url(#arrow-ink)"/>
+  <text x="540" y="232" text-anchor="middle" class="bridge-label">CAPABILITY TRANSFER</text>
+  <rect x="496" y="251" width="88" height="37" rx="6" fill="#25304c"/>
+  <text x="540" y="274" text-anchor="middle" class="step">DEPLOY</text>
+  <text x="540" y="310" text-anchor="middle" class="gap-label">distribution + task gap</text>
+
+  <!-- Cross-stage neuro-symbolic methodology -->
+  <path d="M253 448v-31" fill="none" stroke="#b07d20" stroke-width="1.7" marker-end="url(#arrow-gold)"/>
+  <path d="M827 448v-31" fill="none" stroke="#b07d20" stroke-width="1.7" marker-end="url(#arrow-gold)"/>
+  <rect x="38" y="448" width="1004" height="112" rx="8" fill="#f7efdc" stroke="#d8bf80" stroke-width="1.2"/>
+
+  <path d="M61 474l12-7 12 7v14l-12 7-12-7Z" fill="#fffaf0" stroke="#b07d20" stroke-width="1.5"/>
+  <circle cx="73" cy="476" r="2.7" fill="#137b73"/>
+  <circle cx="67" cy="486" r="2.7" fill="#9a2a2a"/>
+  <circle cx="79" cy="486" r="2.7" fill="#315d85"/>
+  <path d="M73 478.5 68.5 483.5M73 478.5l4.5 5M69.7 486h6.6" stroke="#8a6a12" stroke-width="1.2"/>
+  <text x="96" y="478" class="layer-title">NEURO-SYMBOLIC AI</text>
+  <text x="96" y="498" class="layer-subtitle">Cross-stage methodology: structure what can be expressed</text>
+
+  <line x1="540" y1="468" x2="540" y2="541" stroke="#d8c89c"/>
+  <text x="64" y="527" class="layer-stage">TRAIN</text>
+  <text x="105" y="527" class="layer-copy">encode knowledge  |  generate evidence  |  compose capabilities</text>
+  <text x="566" y="527" class="layer-stage">DEPLOY</text>
+  <text x="620" y="527" class="layer-copy">constrain search  |  plan and reason  |  verify outcomes</text>
+
+  <!-- Deployment experience closes the lifecycle -->
+  <path d="M923 368h130v216H27V368h37" fill="none" stroke="#9a2a2a" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arrow-feedback)"/>
+  <rect x="326" y="574" width="428" height="24" rx="5" fill="#fbfaf5"/>
+  <text x="540" y="590" text-anchor="middle" class="feedback-label">deployment traces and failures return as new evidence and constraints</text>
+</svg>

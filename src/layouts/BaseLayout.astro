@@ -1,0 +1,71 @@
+---
+import { site, rootUrl } from '../data/content';
+import { absoluteUrl, pageUrl } from '../lib/site';
+import SiteChrome from '../components/SiteChrome.astro';
+import PixelTree from '../components/PixelTree.astro';
+import '../styles/site.css';
+
+interface Props {
+  title: string;
+  description: string;
+  page: 'home' | 'publications' | 'projects' | 'academics';
+  keywords?: string[];
+  schema?: Record<string, unknown>;
+  showSidebar?: boolean;
+}
+
+const { title, description, page, keywords = [], schema, showSidebar = false } = Astro.props;
+const profile = site.profile;
+const canonicalPath = page === 'home' ? '/' : `/${page}/`;
+const canonical = pageUrl(canonicalPath);
+const baseKeywords = ['Zhi Zhou', profile.name_cn || '', 'LAMDA', 'Nanjing University', 'test-time intelligence', 'LLM reasoning', 'weakly-supervised learning', 'neuro-symbolic AI'];
+const keywordContent = [...new Set([...keywords, ...baseKeywords].filter(Boolean))].join(', ');
+const image = absoluteUrl((profile.avatar || 'images/zhouz.jpg').split(/[?#]/, 1)[0]);
+const jsonLd = schema ? JSON.stringify(schema).replace(/<\/script/gi, '<\\/script') : '';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={profile.name} />
+    <meta name="keywords" content={keywordContent} />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#14172b" />
+    <meta name="baidu-site-verification" content="codeva-a6qPknWzt9" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href={rootUrl('images/favicon.svg')} type="image/svg+xml" />
+    <link rel="preload" href={rootUrl('assets/fonts/lxgw-name.woff2?v=2')} as="font" type="font/woff2" crossorigin />
+    <meta property="og:site_name" content={`${profile.name}${profile.name_cn ? ` (${profile.name_cn})` : ''}`} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content={page === 'home' ? 'profile' : 'website'} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={image} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    {jsonLd && <script is:inline type="application/ld+json" set:html={jsonLd} />}
+  </head>
+  <body data-page={page}>
+    <SiteChrome current={canonicalPath} />
+    <div class="pixel-tree-scene"><PixelTree /></div>
+    <div class="container py-4 py-lg-5">
+      <div class:list={["row", { 'g-4 g-lg-5': showSidebar }] }>
+        {showSidebar && <div class="col-12 col-lg-3"><slot name="sidebar" /></div>}
+        <main class:list={["col-12", showSidebar ? "col-lg-9" : "col-xl-10 mx-auto"]}>
+          <slot />
+        </main>
+      </div>
+    </div>
+    <footer id="site-footer">{site.footer}</footer>
+    <script is:inline src="/assets/vendor/bootstrap.bundle.min.js"></script>
+    <script>
+      import '../scripts/interactions';
+    </script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+@inproceedings{yang26formalml,
+    author    = {Yang, Xiao-Wen and Zhang, Zihao and Cao, Jianuo and Zhou, Zhi and Li, Zenan and Guo, Lan-Zhe and Yao, Yuan and Chen, Taolue and Li, Yu-Feng and Ma, Xiaoxing},
+    title     = {FormalML: A Benchmark for Evaluating Formal Subgoal Completion in Machine Learning Theory},
+    booktitle = {Proceedings of the 14th International Conference on Learning Representations},
+    year      = {2026}
+}

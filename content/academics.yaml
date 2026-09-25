@@ -1,0 +1,64 @@
+# Academics page data.
+service:
+  - title: Conference Committee
+    items:
+      - Senior Program Committee Member, IJCAI 2025.
+      - Senior Program Committee Member, ACML 2022.
+      - Program Committee Member, NeurIPS 2022/2023/2024/2025.
+      - Program Committee Member, ICML 2022/2023/2024/2025/2026.
+      - Program Committee Member, ICLR 2024/2025/2026.
+      - Program Committee Member, KDD 2024.
+      - Program Committee Member, AAAI 2023/2024/2025/2026/2027.
+      - Program Committee Member, ECAI 2023/2024.
+  - title: Journal Reviewer
+    items:
+      - IEEE Trans. on Pattern Analysis and Machine Intelligence (TPAMI)
+      - IEEE Trans. on Knowledge and Data Engineering (TKDE)
+      - Machine Learning Journal (MLJ)
+      - IEEE Trans. on Neural Networks and Learning Systems (TNNLS)
+      - IEEE Trans. on Circuits and Systems for Video Technology (TCSVT)
+      - Machine Intelligence Research (MIR)
+      - Frontiers of Computer Science (FCS)
+talks:
+  - date: '2025.01'
+    text: 'Preliminary Exploration of Test-Time Computing: From Test-Time Adaptation to Test-Time Scaling (in Chinese), "AI+" Outstanding Ph.D. Student Forum, Peking University.'
+  - date: '2024.09'
+    text: Robust Test-Time Adaptation (in Chinese), "AI+X" National Outstanding Ph.D. Student Forum, Peking University.
+teaching:
+  - date: '2025.08'
+    text: Teaching Assistant, Deep Learning, State Grid Corporation of China.
+  - date: 2022.02 – 2022.06
+    text: Teaching Assistant, Introduction to Advanced Machine Learning, Nanjing University.
+  - date: 2021.09 – 2022.01
+    text: Teaching Assistant, Introduction to Machine Learning, Nanjing University.
+awards:
+  - date: '2025.12'
+    text: <a href="resources/2025/CN25-Scholarship.pdf">National Scholarship for Ph.D. Students</a>, Nanjing University.
+  - date: '2024.12'
+    text: <a href="resources/2024/Huawei24-Scholarship.pdf">Huawei Scholarship for Ph.D. Students</a>, Nanjing University.
+  - date: '2023.12'
+    text: <a href="resources/2023/CN23-Scholarship.pdf">National Scholarship for Ph.D. Students</a>, Nanjing University.
+  - date: '2022.06'
+    text: <a href="resources/2022/LAMDA22-Elite.pdf">LAMDA Excellent Student Award</a>, Nanjing University.
+  - date: '2022.03'
+    text: <a href="resources/2021/Tencent2021-Scholarship.pdf">Tencent Scholarship</a>, Nanjing University.
+  - date: '2020.06'
+    text: <a href="resources/U2020/JLU2019_Top10.pdf">Top 10 College Student of the Year</a>, Jilin University.
+  - date: '2019.12'
+    text: <a href="resources/U2020/JLU2019_NationalScholarship.pdf">National Scholarship</a>, Jilin University.
+  - date: '2019.10'
+    text: CCF Collegiate Computer Systems &amp; Programming Contest, <a href="resources/U2020/CCSP2019.pdf">Gold Medal (11th)</a>, Suzhou.
+  - date: '2018.12'
+    text: ACM-ICPC Asia Regional Contest, <a href="resources/U2020/ICPC2018_ECFinal.pdf">Gold Medal (19th)</a>, EC-Final.
+  - date: '2018.11'
+    text: <a href="resources/U2020/JLU2018_NationalScholarship.pdf">National Scholarship</a>, Jilin University.
+  - date: '2018.10'
+    text: ACM-ICPC Asia Regional Contest, <a href="resources/U2020/ICPC2018_Xuzhou.pdf">Gold Medal</a>, Xuzhou.
+  - date: '2018.10'
+    text: ACM-ICPC Asia Regional Contest, <a href="resources/U2020/ICPC2018_Shenyang.pdf">Gold Medal (16th)</a>, Shenyang.
+  - date: '2018.09'
+    text: China Collegiate Programming Contest, <a href="resources/U2020/CCPC2018_Qinghuangdao.pdf">Gold Medal (4th)</a>, Qinhuangdao.
+  - date: '2018.09'
+    text: China Collegiate Programming Contest, <a href="resources/U2020/CCPC2018_Jilin.pdf">Gold Medal (10th)</a>, Jilin.
+  - date: '2017.11'
+    text: <a href="resources/U2020/JLU2017_NationalScholarship.pdf">National Scholarship</a>, Jilin University.

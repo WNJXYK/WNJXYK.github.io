@@ -1,0 +1,7 @@
+# 预设研究主题顺序 —— Publications 页「By Topic」分类用。
+# 每行一个主题，顺序即展示顺序；# 开头为注释。
+# 论文归到哪个主题，由 content/publications.yaml 里每篇 paper 的 topic 决定；
+# 这里没列出的主题会自动排到最后。
+Adaptive learning
+Agent learning
+Neuro-symbolic learning

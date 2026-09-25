@@ -1,0 +1,7 @@
+@inproceedings{zhou21step,
+    author    = {Zhou, Zhi and Guo, Lan-Zhe and Cheng, Zhan-Zhan and Li, Yu-Feng and Pu, Shi-Liang},
+    title     = {{STEP}: Out-of-Distribution Detection in the Presence of Limited In-Distribution Labeled Data},
+    booktitle = {Advances in Neural Information Processing Systems},
+    pages     = {29168--29180},
+    year      = {2021}
+}

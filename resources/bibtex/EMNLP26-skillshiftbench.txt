@@ -1,0 +1,6 @@
+@inproceedings{chen2026skillshift,
+  author    = {Chen, Boyu and Zhou, Zhi and Li, Yu-Feng},
+  title     = {SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2026}
+}

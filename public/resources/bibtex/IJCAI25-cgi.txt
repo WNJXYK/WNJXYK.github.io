@@ -1,0 +1,7 @@
+@inproceedings{zhou25cgi,
+    author    = {Zhou, Zhi and Tan, Hao-Zhe and Song, Peng-Xiao and Guo, Lan-Zhe},
+    title     = {{CGI}: Identifying Conditional Generative Models with Example Images},
+    booktitle = {Proceedings of the 34th International Joint Conference on Artificial Intelligence},
+    pages     = {7227--7235},
+    year      = {2025}
+}

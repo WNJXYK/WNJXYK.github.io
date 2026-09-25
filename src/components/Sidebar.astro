@@ -1,0 +1,17 @@
+---
+import { site, rootUrl } from '../data/content';
+import Icon from './Icon.astro';
+---
+<aside id="sidebar">
+  <div class="side-inner">
+    <img class="avatar" src={rootUrl(site.profile.avatar)} alt={site.profile.name} />
+    <div class="s-name">{site.profile.name}<br /><span class="cn">{site.profile.name_cn}</span></div>
+    <p class="s-role">{site.profile.role}</p>
+    <div class="affil-logos">
+      {site.logos.map((logo) => <a href={logo.href} title={logo.title} target="_blank" rel="noopener noreferrer"><img src={rootUrl(logo.src)} alt={logo.alt} /></a>)}
+    </div>
+    <ul class="contact">
+      {site.contacts.map((contact) => <li><Icon name={contact.icon} />{contact.href ? <a href={contact.href} target={contact.href.startsWith('http') ? '_blank' : undefined} rel={contact.href.startsWith('http') ? 'noopener noreferrer' : undefined}>{contact.label_html ? <Fragment set:html={contact.label_html} /> : contact.label}</a> : <span>{contact.label_html ? <Fragment set:html={contact.label_html} /> : contact.label}</span>}</li>)}
+    </ul>
+  </div>
+</aside>

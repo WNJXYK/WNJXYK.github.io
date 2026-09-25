@@ -1,0 +1,7 @@
+@inproceedings{guo23learnware,
+    author    = {Guo, Lan-Zhe and Zhou, Zhi and Li, Yu-Feng and Zhou, Zhi-Hua},
+    title     = {Identifying Useful Learnwares for Heterogeneous Label Spaces},
+    booktitle = {Proceedings of the 40th International Conference on Machine Learning},
+    pages     = {12122--12131},
+    year      = {2023}
+}

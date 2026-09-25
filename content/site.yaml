@@ -1,0 +1,54 @@
+# Shared site chrome: navbar, sidebar profile, contacts, and footer.
+brand:
+  name: Zhi Zhou
+  name_cn: 周植
+  href: /
+profile:
+  avatar: images/zhouz.jpg?v=11
+  name: Zhi Zhou
+  name_cn: 周植
+  role: Ph.D. Candidate
+  location: Room B305, AI Building, Nanjing University (Xianlin Campus), Nanjing, China
+logos:
+  - title: Nanjing University
+    href: https://www.nju.edu.cn/
+    src: images/nju-logo.png?v=10
+    alt: Nanjing University
+  - title: LAMDA Group
+    href: https://www.lamda.nju.edu.cn/
+    src: images/lamda-logo.png?v=10
+    alt: LAMDA
+nav:
+  - label: Home
+    href: /
+  - label: Publications
+    href: /publications/
+  - label: Projects
+    href: /projects/
+  - label: Academics
+    href: /academics/
+contacts:
+  - icon: email
+    label: zhouz@lamda.nju.edu.cn
+    href: mailto:zhouz@lamda.nju.edu.cn
+  - icon: email
+    label: wnjxyk@gmail.com
+    href: mailto:wnjxyk@gmail.com
+  - icon: scholar
+    label: Google Scholar
+    href: https://scholar.google.com/citations?user=VzvP5a8AAAAJ
+  - icon: github
+    label: GitHub
+    href: https://github.com/WNJXYK
+  - icon: huggingface
+    label: Hugging Face
+    href: https://huggingface.co/WNJXYK
+  - icon: dblp
+    label: DBLP
+    href: https://dblp.org/pid/04/2090-7.html
+  - icon: orcid
+    label: ORCID
+    href: https://orcid.org/0000-0001-7408-1200
+  - icon: location
+    label_html: Room B305, AI Building,<br>Nanjing University (Xianlin Campus),<br>Nanjing, China
+footer: © Zhi Zhou · Built as static HTML with Bootstrap

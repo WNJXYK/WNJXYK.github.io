@@ -1,0 +1,6 @@
+---
+interface Props { title: string; level?: 'h1' | 'h2' }
+const { title, level = 'h2' } = Astro.props;
+const Tag = level;
+---
+<Tag class={level === 'h1' ? 'page-heading' : undefined}>{title}<slot /><span class="rule"></span></Tag>

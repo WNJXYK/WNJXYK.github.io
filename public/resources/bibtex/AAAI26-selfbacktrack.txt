@@ -1,0 +1,7 @@
+@inproceedings{yang26selfbacktrack,
+    author    = {Yang, Xiao-Wen and Zhu, Xuan-Yi and Zhang, Ding-Chu and Wei, Wen-Da and Shao, Jie-Jing and Zhou, Zhi and Guo, Lan-Zhe and Li, Yu-Feng},
+    title     = {Step Back to Leap Forward: Self-Backtracking for Symbolic Reasoning and Planning in Language Models},
+    booktitle = {Proceedings of the 40th AAAI Conference on Artificial Intelligence},
+    pages     = {27657--27665},
+    year      = {2026}
+}

@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ContentSection from '../components/ContentSection.astro';
+import Timeline from '../components/Timeline.astro';
+import { academics } from '../data/content';
+const schema = { '@context': 'https://schema.org', '@type': 'ProfilePage', name: 'Academics - Zhi Zhou', url: 'https://zhouz.dev/academics/', about: { '@id': 'https://zhouz.dev/#person' } };
+---
+<BaseLayout title="Academics - Zhi Zhou" description="Academic service, invited talks, teaching, awards, and honors of Zhi Zhou." page="academics" schema={schema} keywords={['academic service', 'reviewer', 'teaching assistant', 'awards']}>
+  <h1 class="visually-hidden">Academics - Zhi Zhou (周植)</h1>
+  <div id="academics-body">
+    <ContentSection title="Academic Service">
+      {academics.service.map((group) => <Fragment><h3 class="pub-h3">{group.title}</h3><ul class="plain">{group.items.map((item) => <li>{item}</li>)}</ul></Fragment>)}
+    </ContentSection>
+    <ContentSection title="Invited Talks"><Timeline items={academics.talks} /></ContentSection>
+    <ContentSection title="Teaching"><Timeline items={academics.teaching} /></ContentSection>
+    <ContentSection title="Awards & Honors"><Timeline items={academics.awards} /></ContentSection>
+  </div>
+</BaseLayout>

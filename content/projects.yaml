@@ -1,0 +1,33 @@
+# Projects page data.
+software:
+  - name: LawGPT
+    img: images/project-logo/lawgpt.jpeg
+    badge: 🎉 6K GitHub stars
+    description: The first Chinese legal large language model, trained on a series of open-source base models with massive question–answer pairs augmented from Chinese legal documents and laws.
+    links:
+      - label: Technical Report
+        url: https://arxiv.org/pdf/2502.06572
+      - label: GitHub
+        url: https://github.com/pengxiao-song/LaWGPT
+  - name: LAMDA-SSL
+    img: images/project-logo/lamda-ssl.png
+    badge: 🎉 24.8K PyPI downloads
+    description: A comprehensive, easy-to-use toolkit for semi-supervised learning, containing 30+ statistical and deep semi-supervised learning algorithms.
+    links:
+      - label: Tutorial
+        url: https://ygzwqzd.github.io/LAMDA-SSL/#/
+      - label: GitHub
+        url: https://github.com/YGZWQZD/LAMDA-SSL
+research:
+  - date: 2025.01 – 2026.12
+    text: Robust Weakly-Supervised Learning for Open Environment (624B2068), Research Program for Young Students, NSFC.
+  - date: 2022.09 – 2025.09
+    text: Judgment Knowledge Recognition Technology for Document-Level Understanding, China Judicial Big Data Institute.
+  - date: 2022.06 – 2023.06
+    text: Fraud Detection System based on Weakly Supervised Learning, <a href="resources/2023/Huawei23-Award.pdf">Huawei</a>.
+  - date: 2021.10 – 2022.05
+    text: Housing Sales Customer Rating Model Optimization, <a href="resources/2021/Beike21-Visiting.pdf">Beike (Internship)</a>.
+  - date: 2021.03 – 2022.12
+    text: Concept Incremental Learning with Active Annotations, Hikvision.
+  - date: 2020.07 – 2021.09
+    text: Liability Judgment System based on Semi-Supervised Multi-Label Learning, Didi (Internship).

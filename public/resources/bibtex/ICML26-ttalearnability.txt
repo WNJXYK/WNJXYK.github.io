@@ -1,0 +1,6 @@
+@inproceedings{zhou26ttalearnability,
+    author    = {Zhou, Zhi and Yang, Ming and Tian, Shi-Yu and Yu, Kun-Yang and Guo, Lan-Zhe and Li, Yu-Feng},
+    title     = {On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective},
+    booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+    year      = {2026}
+}

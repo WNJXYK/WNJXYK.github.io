@@ -1,0 +1,31 @@
+---
+import type { Publication } from '../data/content';
+import { rootUrl } from '../data/content';
+import { citationBadge, enhanceAuthors, isExternal } from '../lib/site';
+import PublicationMedia from './PublicationMedia.astro';
+interface Props { publication: Publication; variant?: 'card' | 'row'; index?: number; showCitation?: boolean }
+const { publication: pub, variant = 'row', index = 1, showCitation = false } = Astro.props as Props;
+const tags: string[] = pub.tags || [];
+const tagClass = (tag: string) => /^(CCF|CAAI)-[ABC]$/.test(tag.trim()) ? 'rank' : 'note';
+---
+{variant === 'card' ? (
+  <div class="pub-card" id={pub.id}>
+    {pub.img ? <PublicationMedia src={rootUrl(pub.img)} title={pub.title || pub.venue} /> : <div class="thumb thumb--text">{pub.venue}</div>}
+    <div class="pub-body">
+      <div class="pub-meta"><span class="venue-badge">{pub.venue}</span>{tags.map((tag) => <span class:list={["tag", tagClass(tag)]}>{tag}</span>)}{showCitation && pub.cite && <img class="cites" src={citationBadge(pub.cite)} alt="citations" loading="lazy" />}</div>
+      <b class="ttl">{pub.title}</b>
+      <span class="au" set:html={enhanceAuthors(pub.authors)} />
+      <span class="lk">{pub.links.map((link, idx) => <Fragment><a href={rootUrl(link.url)} target={isExternal(link.url) ? '_blank' : undefined} rel={isExternal(link.url) ? 'noopener noreferrer' : undefined}>{link.label}</a>{idx < pub.links.length - 1 && <span class="sep"> · </span>}</Fragment>)}</span>
+    </div>
+  </div>
+) : (
+  <div class="pub-row" id={pub.id} data-pub-id={pub.id}>
+    <span class="idx">{index}.</span>
+    <div class="pub-body">
+      <div class="pub-meta"><span class="venue-badge">{pub.venue}</span>{tags.map((tag) => <span class:list={["tag", tagClass(tag)]}>{tag}</span>)}</div>
+      <b class="ttl">{pub.title}</b>
+      <span class="au" set:html={enhanceAuthors(pub.authors)} />
+      <span class="lk">{pub.links.map((link, idx) => <Fragment><a href={rootUrl(link.url)} target={isExternal(link.url) ? '_blank' : undefined} rel={isExternal(link.url) ? 'noopener noreferrer' : undefined}>{link.label}</a>{idx < pub.links.length - 1 && <span class="sep"> · </span>}</Fragment>)}</span>
+    </div>
+  </div>
+)}

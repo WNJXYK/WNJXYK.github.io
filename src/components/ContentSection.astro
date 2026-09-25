@@ -1,0 +1,6 @@
+---
+import SectionHeading from './SectionHeading.astro';
+interface Props { title: string }
+const { title } = Astro.props;
+---
+<section><SectionHeading title={title} /><slot /></section>

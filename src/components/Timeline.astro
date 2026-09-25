@@ -1,0 +1,8 @@
+---
+import { trusted } from '../lib/site';
+interface Props { items: Array<{ date: string; text: string }> }
+const { items } = Astro.props as Props;
+---
+<ul class="tl">
+  {items.map((item) => <li><span class="date">{item.date}</span><span set:html={trusted(item.text)} /></li>)}
+</ul>

@@ -1,0 +1,7 @@
+@inproceedings{cheng25tabtta,
+    author    = {Cheng, Zi-Jian and Jia, Zi-Yi and Yu, Kun-Yang and Zhou, Zhi and Guo, Lan-Zhe},
+    title     = {Fully Test-Time Adaptation for Feature Decrement in Tabular Data},
+    booktitle = {Proceedings of the 34th International Joint Conference on Artificial Intelligence},
+    pages     = {4940--4948},
+    year      = {2025}
+}

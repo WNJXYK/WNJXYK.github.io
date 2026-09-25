@@ -1,0 +1,25 @@
+# =============================================================================
+#  selected.yaml —— 首页「Selected Publications」展示哪些论文、怎么分组排序。
+#  只改这里就能换精选，不用动 publications.html 里的论文块。
+#
+#  · topic  : 分组标题（首页/精选视图里显示）
+#  · papers : 该组按顺序列出论文的 id
+#             id 就是 content/publications.yaml 里每篇 paper 的 id（= bibtex 文件名）
+#  想加一篇：把它的 id 放进某个 topic 的 papers 列表即可。
+# =============================================================================
+groups:
+  - topic: Adaptive learning
+    papers:
+      - ICML26-ttalearnability
+      - AAAI25-ftta
+      - ICML23-ods
+
+  - topic: Agent learning
+    papers:
+      - EMNLP26-lookstep
+      - EMNLP26-skillshiftbench
+
+  - topic: Neuro-symbolic learning
+    papers:
+      - NeurIPS25-rpc
+      - NeurIPS24-nesy

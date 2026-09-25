@@ -1,0 +1,7 @@
+@inproceedings{cheng25tabfsbench,
+    author    = {Cheng, Zi-Jian and Jia, Ziyi and Zhou, Zhi and Li, Yu-Feng and Guo, Lan-Zhe},
+    title     = {{T}ab{FSB}ench: Tabular Benchmark for Feature Shifts in Open Environments},
+    booktitle = {Proceedings of the 42nd International Conference on Machine Learning},
+    pages     = {10025--10089},
+    year      = {2025}
+}

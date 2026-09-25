@@ -1,0 +1,611 @@
+# Publications data. Edit this file to add, remove, reorder, or retag papers.
+papers:
+  - id: EMNLP26-lookstep
+    type: conference
+    topic: Agent learning
+    cite: VzvP5a8AAAAJ:NaGl4SEjCO4C
+    venue: EMNLP 2026
+    img: https://kunyang-yu.github.io/LookStep/lookstep-demo.mp4
+    title: 'LookStep: Efficient Vision-Language Navigation with Linguistic Foresight and Event Driven Memory.'
+    authors: Kun-Yang Yu, Yingzhe Li, Hongyu Xu, Shi-Yu Tian, Zhi Zhou†, Yang Chen, Ming Yang, Sheng Wang, Qing Yu, Lan-Zhe Guo, Yu-Feng Li†.
+    tags:
+      - CCF-B
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2609.02350
+      - label: Code
+        url: https://github.com/kunyang-YU/LookStep
+      - label: Project
+        url: https://kunyang-yu.github.io/LookStep/
+  - id: EMNLP26-symbolllm-fe
+    type: conference
+    topic: Neuro-symbolic learning
+    cite: VzvP5a8AAAAJ:RGFaLdJalmkC
+    venue: EMNLP 2026
+    title: 'SymboLLM-FE: LLM-Accelerated Symbolic Regression for Automated Feature Engineering on Tabular Data.'
+    authors: Zi-Jian Cheng, Ziyi Jia, Zhi Zhou, Yu-Feng Li, Lan-Zhe Guo.
+    tags:
+      - CCF-B
+    links:
+      - label: Paper
+        url: https://lamda-nesy.github.io/SymboLLM-FE/2026_EMNLP_SymboLLM-FE%EF%BC%9ALLM%20Accelerated%20Symbolic%20Regression%20for%20Automated%20Feature%20Engineering.pdf
+      - label: Code
+        url: https://github.com/LAMDA-NeSy/SymboLLM-FE
+      - label: Project
+        url: https://lamda-nesy.github.io/SymboLLM-FE/index.html
+      - label: BibTeX
+        url: resources/bibtex/EMNLP26-symbolllm-fe.txt
+  - id: EMNLP26-skillshiftbench
+    type: conference
+    topic: Agent learning
+    venue: EMNLP 2026
+    img: images/paper-logo/EMNLP26-SkillShift.png
+    title: 'SkillShift-Bench: Benchmarking Skill Learning under Environment Evolution for Web Agents.'
+    authors: Boyu Chen, Zhi Zhou†, Yu-Feng Li†.
+    tags:
+      - CCF-B
+    links:
+      - label: Dataset
+        url: https://github.com/SkillShift-Bench/skillshift-envs
+      - label: Code
+        url: https://github.com/SkillShift-Bench/skillshift-bench
+      - label: Project
+        url: https://skillshift-bench.github.io/
+      - label: BibTeX
+        url: resources/bibtex/EMNLP26-skillshiftbench.txt
+  - id: ICML26-ttalearnability
+    type: conference
+    topic: Adaptive learning
+    cite: VzvP5a8AAAAJ:blknAaTinKkC
+    venue: ICML 2026
+    img: images/paper-logo/ICML26-Theory.png
+    title: 'On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective.'
+    authors: Zhi Zhou, Ming Yang, Shi-Yu Tian, Kun-Yang Yu, Lan-Zhe Guo, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2605.28057
+      - label: Project
+        url: https://zhouz.dev/TTA-Learnability/
+      - label: BibTeX
+        url: resources/bibtex/ICML26-ttalearnability.txt
+  - id: ICML26-pretexttask
+    type: conference
+    topic: Adaptive learning
+    venue: ICML 2026
+    title: Quantitative Estimation of Target Task Performance from Unsupervised Pretext Task in Semi/Self-Supervised Learning.
+    authors: Lin-Han Jia, Siyu Han, Wen-Chao Hu, Jie-Jing Shao, Wen-Da Wei, Zhi Zhou, Lan-Zhe Guo†, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2508.07299
+      - label: BibTeX
+        url: resources/bibtex/ICML26-pretexttask.txt
+  - id: ICML26-vtbench
+    type: conference
+    topic: Adaptive learning
+    venue: ICML 2026
+    cite: VzvP5a8AAAAJ:M3NEmzRMIkIC
+    title: 'VT-Bench: A Unified Benchmark for Visual-Tabular Multi-Modal Learning.'
+    authors: Ziyi Jia, Zi-Jian Cheng, Xinyue Zhang, Kun-Yang Yu, Zhi Zhou, Yu-Feng Li, Lan-Zhe Guo†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2605.08146
+      - label: BibTeX
+        url: resources/bibtex/ICML26-vtbench.txt
+  - id: ICLR26-formalml
+    type: conference
+    topic: Adaptive learning
+    venue: ICLR 2026
+    title: 'FormalML: A Benchmark for Evaluating Formal Subgoal Completion in Machine Learning Theory.'
+    authors: Xiao-Wen Yang, Zihao Zhang, Jianuo Cao, Zhi Zhou, Zenan Li, Lan-Zhe Guo, Yuan Yao, Taolue Chen, Yu-Feng Li†, Xiaoxing Ma†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2510.02335
+      - label: BibTeX
+        url: resources/bibtex/ICLR26-formalml.txt
+  - id: AAAI26-selfbacktrack
+    type: conference
+    topic: Adaptive learning
+    venue: AAAI 2026
+    cite: VzvP5a8AAAAJ:Wp0gIr-vW9MC
+    title: 'Step Back to Leap Forward: Self-Backtracking for Boosting Reasoning of Language Models.'
+    authors: Xiao-Wen Yang, Xuan-Yi Zhu, Wen-Da Wei, Ding-Chu Zhang, Jie-Jing Shao, Zhi Zhou, Lan-Zhe Guo, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://www.arxiv.org/abs/2502.04404
+      - label: BibTeX
+        url: resources/bibtex/AAAI26-selfbacktrack.txt
+  - id: ECCV26-nesyroute
+    type: conference
+    topic: Neuro-symbolic learning
+    venue: ECCV 2026
+    title: 'NeSy-Route: A Neuro-Symbolic Benchmark for Constrained Route Planning in Remote Sensing.'
+    authors: Ming Yang, Zhi Zhou†, Shi-Yu Tian, Kun-Yang Yu, Lan-Zhe Guo, Yu-Feng Li†.
+    tags:
+      - CCF-B
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2603.16307
+      - label: Dataset
+        url: https://huggingface.co/datasets/Ming1010/NeSy-Route
+      - label: Code
+        url: https://mingyang1010.github.io/NeSy-Route/
+      - label: Project
+        url: https://mingyang1010.github.io/NeSy-Route/
+      - label: BibTeX
+        url: resources/bibtex/ECCV26-nesyroute.txt
+  - id: NeurIPS25-rpc
+    type: conference
+    topic: Neuro-symbolic learning
+    venue: NeurIPS 2025
+    cite: VzvP5a8AAAAJ:hC7cP41nSMkC
+    img: images/paper-logo/NeurIPS25-RPC.png
+    title: A Theoretical Study on Bridging Internal Probability and Self-Consistency for LLM Reasoning.
+    authors: Zhi Zhou, Yuhao Tan, Zenan Li, Yuan Yao, Lan-Zhe Guo, Yu-Feng Li†, Xiaoxing Ma†.
+    tags:
+      - CCF-A
+      - 'HF #1 Paper of the Day'
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2510.15444
+      - label: Project
+        url: https://zhouz.dev/RPC
+      - label: BibTeX
+        url: resources/bibtex/NeurIPS25-rpc.txt
+  - id: EMNLP25-vcsearch
+    type: conference
+    topic: Adaptive learning
+    venue: EMNLP 2025
+    cite: VzvP5a8AAAAJ:L8Ckcad2t8MC
+    title: 'VCSearch: Bridging the Gap Between Well-Defined and Ill-Defined Problems in Mathematical Reasoning.'
+    authors: Shi-Yu Tian*, Zhi Zhou*, Kun-Yang Yu, Ming Yang, Lin-Han Jia, Lan-Zhe Guo†, Yu-Feng Li†.
+    tags:
+      - CCF-B
+      - Oral
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2406.05055
+      - label: BibTeX
+        url: resources/bibtex/EMNLP25-vcsearch.txt
+  - id: EMNLP25-autoevolve
+    type: conference
+    topic: Adaptive learning
+    venue: Findings @ EMNLP 2025
+    cite: VzvP5a8AAAAJ:hFOr9nPyWt4C
+    title: 'AutoEvolve: Automatically Evolving Queries for Applicable and Scalable Retrieval-Augmented Generation Benchmarking.'
+    authors: Ding-Chu Zhang, Xiaowen Zhang, Yue Fei, Renjun Hu, Xiao-Wen Yang, Zhi Zhou, Baixuan Li, Yu-Feng Li†, Xing Shi, Wei Lin.
+    links:
+      - label: Paper
+        url: https://aclanthology.org/2025.findings-emnlp.403.pdf
+      - label: BibTeX
+        url: resources/bibtex/EMNLP25-autoevolve.txt
+  - id: IJCAI25-cgi
+    type: conference
+    topic: Neuro-symbolic learning
+    venue: IJCAI 2025
+    cite: VzvP5a8AAAAJ:ULOm3_A8WrAC
+    title: 'CGI: Identifying Conditional Generative Models with Example Images.'
+    authors: Zhi Zhou, Hao-Zhe Tan, Peng-Xiao Song, Lan-Zhe Guo†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2501.13991
+      - label: Poster
+        url: resources/2025/CGI-Poster.pdf
+      - label: BibTeX
+        url: resources/bibtex/IJCAI25-cgi.txt
+  - id: IJCAI25-neurosymbolic
+    type: conference
+    topic: Neuro-symbolic learning
+    venue: IJCAI 2025
+    cite: VzvP5a8AAAAJ:qUcmZB5y_30C
+    title: 'Neuro-Symbolic Artificial Intelligence: Towards Improving the Reasoning Abilities of Large Language Models.'
+    authors: Xiao-Wen Yang*, Jie-Jing Shao*, Lan-Zhe Guo*, Bo-Wen Zhang, Zhi Zhou, Lin-Han Jia, Wang-Zhou Dai, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2508.13678
+      - label: BibTeX
+        url: resources/bibtex/IJCAI25-neurosymbolic.txt
+  - id: IJCAI25-tabtta
+    type: conference
+    topic: Adaptive learning
+    venue: IJCAI 2025
+    cite: VzvP5a8AAAAJ:TQgYirikUcIC
+    title: Fully Test-Time Adaptation for Feature Decrement in Tabular Data.
+    authors: Zi-Jian Cheng, Zi-Yi Jia, Kun-Yang Yu, Zhi Zhou, Lan-Zhe Guo†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://www.ijcai.org/proceedings/2025/550
+      - label: BibTeX
+        url: resources/bibtex/IJCAI25-tabtta.txt
+  - id: IJCAI25-bmip
+    type: conference
+    topic: Adaptive learning
+    venue: IJCAI 2025
+    cite: VzvP5a8AAAAJ:HDshCWvjkbEC
+    title: 'BMIP: Bi-directional Modality Interaction Prompt Learning for VLM.'
+    authors: Song-Lin Lv, Yu-Yang Chen, Zhi Zhou, Ming Yang, Lan-Zhe Guo†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://www.ijcai.org/proceedings/2025/655
+      - label: BibTeX
+        url: resources/bibtex/IJCAI25-bmip.txt
+  - id: ICML25-vlmselect
+    type: conference
+    topic: Neuro-symbolic learning
+    venue: ICML 2025
+    cite: VzvP5a8AAAAJ:YOwf2qJgpHMC
+    title: Pre-Trained Vision-Language Model Selection and Reuse for Downstream Tasks.
+    authors: Hao-Zhe Tan, Zhi Zhou, Lan-Zhe Guo†, Yu-feng Li.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://openreview.net/forum?id=bvrsrvo0Mt
+      - label: BibTeX
+        url: resources/bibtex/ICML25-vlmselect.txt
+  - id: ICML25-tabfsbench
+    type: conference
+    topic: Adaptive learning
+    venue: ICML 2025
+    cite: VzvP5a8AAAAJ:M3ejUd6NZC8C
+    title: 'TabFSBench: Tabular Benchmark for Feature Shifts in Open Environment.'
+    authors: Zi-Jian Cheng, Ziyi Jia, Zhi Zhou, Lan-Zhe Guo, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://openreview.net/forum?id=ab8yOxtKWj
+      - label: BibTeX
+        url: resources/bibtex/ICML25-tabfsbench.txt
+  - id: ICLR25W-lawgpt
+    type: workshop
+    topic: Neuro-symbolic learning
+    venue: SCI-FM Workshop @ ICLR 2025
+    cite: VzvP5a8AAAAJ:_kc_bZDykSQC
+    title: 'LawGPT: Knowledge-Guided Data Generation and Its Application to Legal LLM.'
+    authors: Zhi Zhou, Kun-Yang Yu, Shi-Yu Tian, Xiao-Wen Yang, Jiang-Xin Shi, Peng-Xiao Song, Yi-Xuan Jin, Lan-Zhe Guo†, Yu-Feng Li†.
+    links:
+      - label: Paper
+        url: https://arxiv.org/pdf/2502.06572
+      - label: BibTeX
+        url: resources/bibtex/ICLR25W-lawgpt.txt
+  - id: ICLR25-carts
+    type: conference
+    topic: Adaptive learning
+    venue: ICLR 2025
+    cite: VzvP5a8AAAAJ:mVmsd5A6BfQC
+    title: 'CARTS: Advancing Neural Theorem Proving with Diversified Tactic Calibration and Bias-Resistant Tree Search.'
+    authors: Xiao-Wen Yang, Zhi Zhou, Haiming Wang, Aoxue Li, Wen-Da Wei, Hui Jin, Zhenguo Li, Yu-Feng Li†.
+    tags:
+      - CAAI-A
+    links:
+      - label: Paper
+        url: https://openreview.net/forum?id=VQwI055flA
+      - label: BibTeX
+        url: resources/bibtex/ICLR25-carts.txt
+  - id: AAAI25-ftta
+    type: conference
+    topic: Adaptive learning
+    venue: AAAI 2025
+    cite: VzvP5a8AAAAJ:Zph67rFs4hoC
+    img: images/paper-logo/AAAI25-FTTA.png
+    title: Fully Test-time Adaptation for Tabular Data.
+    authors: Zhi Zhou*, Kun-Yang Yu*, Lan-Zhe Guo†, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2412.10871
+      - label: Project
+        url: https://zhouz.dev/FTTA
+      - label: BibTeX
+        url: resources/bibtex/AAAI25-ftta.txt
+  - id: NeurIPS24-nesy
+    type: conference
+    topic: Neuro-symbolic learning
+    venue: NeurIPS 2024
+    cite: VzvP5a8AAAAJ:KlAtU1dfN6UC
+    img: images/paper-logo/NeurIPS24-Nesy.png
+    title: Neuro-Symbolic Data Generation for Math Reasoning.
+    authors: Zenan Li*, Zhi Zhou*, Yuan Yao, Xian Zhang†, Yu-Feng Li, Chun Cao, Fan Yang, Xiaoxing Ma†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2412.04857
+      - label: BibTeX
+        url: resources/bibtex/NeurIPS24-nesy.txt
+  - id: IJCAI24-lspan
+    type: conference
+    topic: Adaptive learning
+    venue: IJCAI 2024
+    cite: VzvP5a8AAAAJ:3fE2CSJIrl8C
+    title: 'LSPAN: Spectrally Localized Augmentation for Graph Consistency Learning.'
+    authors: Heng-Kai Zhang, Yi-Ge Zhang, Zhi Zhou, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://www.ijcai.org/proceedings/2024/0604.pdf
+      - label: BibTeX
+        url: resources/bibtex/IJCAI24-lspan.txt
+  - id: ICML24-decoop
+    type: conference
+    topic: Adaptive learning
+    venue: ICML 2024
+    cite: VzvP5a8AAAAJ:0EnyYjriUFMC
+    img: images/paper-logo/ICML24-DeCoOp.png
+    title: 'DeCoOp: Robust Prompt Tuning with Out-of-Distribution Detection.'
+    authors: Zhi Zhou, Ming Yang, Jiang-Xin Shi, Lan-Zhe Guo†, Yu-Feng Li.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://arxiv.org/pdf/2406.00345.pdf
+      - label: Project
+        url: https://zhouz.dev/DeCoOp/
+      - label: Poster
+        url: resources/2024/DeCoOp-Poster.pdf
+      - label: BibTeX
+        url: resources/bibtex/ICML24-decoop.txt
+  - id: ICML24-longtail
+    type: conference
+    topic: Adaptive learning
+    venue: ICML 2024
+    cite: VzvP5a8AAAAJ:kNdYIx-mwKoC
+    title: 'Long-tail Learning with Foundation Model: Heavy Fine-tuning Hurts.'
+    authors: Jiang-Xin Shi*, Tong Wei*, Zhi Zhou, Jie-Jing Shao, Xin-Yan Han, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://arxiv.org/abs/2309.10019
+      - label: BibTeX
+        url: resources/bibtex/ICML24-longtail.txt
+  - id: ICLR24-ssl
+    type: conference
+    topic: Adaptive learning
+    venue: ICLR 2024
+    cite: VzvP5a8AAAAJ:roLk4NBRz8UC
+    title: Realistic Evaluation of Semi-supervised Learning Algorithms in Open Environments.
+    authors: Lin-Han Jia, Lan-Zhe Guo†, Zhi Zhou, Yu-Feng Li†.
+    tags:
+      - CAAI-A
+    links:
+      - label: Paper
+        url: https://openreview.net/forum?id=RvUVMjfp8i
+      - label: BibTeX
+        url: resources/bibtex/ICLR24-ssl.txt
+  - id: AAAI24-hongat
+    type: conference
+    topic: Adaptive learning
+    venue: AAAI 2024
+    cite: VzvP5a8AAAAJ:hqOjcs7Dif8C
+    title: 'HONGAT: Graph Attention Networks in the Presence of High-Order Neighbors.'
+    authors: Heng-Kai Zhang, Yi-Ge Zhang, Zhi Zhou, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://ojs.aaai.org/index.php/AAAI/article/view/29615/31042
+      - label: BibTeX
+        url: resources/bibtex/AAAI24-hongat.txt
+  - id: AAAI24-adaprompt
+    type: conference
+    topic: Adaptive learning
+    venue: AAAI 2024
+    cite: VzvP5a8AAAAJ:UebtZRa9Y70C
+    title: Robust Test-Time Adaptation for Zero-Shot Prompt Tuning.
+    authors: Ding-Chu Zhang*, Zhi Zhou*, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://ojs.aaai.org/index.php/AAAI/article/view/29611/31034
+      - label: Code
+        url: https://github.com/zhangdingchu/Adaprompt
+      - label: Poster
+        url: resources/2024/AdaPrompt-Poster.pdf
+      - label: Slides
+        url: resources/2024/AdaPrompt-Slide.pdf
+      - label: BibTeX
+        url: resources/bibtex/AAAI24-adaprompt.txt
+  - id: ICML23-ods
+    type: conference
+    topic: Adaptive learning
+    venue: ICML 2023
+    cite: VzvP5a8AAAAJ:Tyk-4Ss8FVUC
+    img: images/paper-logo/ICML23-ODS.png
+    title: 'ODS: Test-Time Adaptation in the Presence of Open-World Data Shift.'
+    authors: Zhi Zhou, Lan-Zhe Guo, Lin-Han Jia, Ding-Chu Zhang, Yu-Feng Li†.
+    tags:
+      - CCF-A
+      - Oral
+    links:
+      - label: Paper
+        url: https://openreview.net/forum?id=Phjti0QbkZ
+      - label: Code
+        url: https://www.lamda.nju.edu.cn/code_ODS.ashx
+      - label: Poster
+        url: resources/2023/ODS-Poster.pdf
+      - label: Slides
+        url: resources/2023/ODS-Slide.pdf
+      - label: Video
+        url: https://icml.cc/virtual/2023/poster/24841
+      - label: BibTeX
+        url: resources/bibtex/ICML23-ods.txt
+  - id: ICML23-bidirectional
+    type: conference
+    topic: Adaptive learning
+    venue: ICML 2023
+    cite: VzvP5a8AAAAJ:zYLM7Y9cAGgC
+    title: Bidirectional Adaptation for Robust Semi-Supervised Learning with Inconsistent Data Distributions.
+    authors: Lin-Han Jia, Lan-Zhe Guo, Zhi Zhou, Jie-Jing Shao, Yu-Ke Xiang, Yu-Feng Li†.
+    tags:
+      - CCF-A
+      - Oral
+    links:
+      - label: Paper
+        url: https://openreview.net/forum?id=dZA7WtCULT
+      - label: Code
+        url: https://github.com/YGZWQZD/LAMDA-SSL
+      - label: BibTeX
+        url: resources/bibtex/ICML23-bidirectional.txt
+  - id: ICML23-learnware
+    type: conference
+    topic: Neuro-symbolic learning
+    venue: ICML 2023
+    cite: VzvP5a8AAAAJ:IjCSPb-OGe4C
+    title: Identifying Useful Learnwares for Heterogeneous Label Spaces.
+    authors: Lan-Zhe Guo*, Zhi Zhou*, Yu-Feng Li†, Zhi-Hua Zhou.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://proceedings.mlr.press/v202/guo23l/guo23l.pdf
+      - label: Poster
+        url: resources/2023/Learnware-Poster.pdf
+      - label: BibTeX
+        url: resources/bibtex/ICML23-learnware.txt
+  - id: NeurIPS23W-genmodel
+    type: workshop
+    topic: Neuro-symbolic learning
+    venue: Diffusion Workshop @ NeurIPS 2023
+    title: You Only Submit One Image to Find the Most Suitable Generative Model.
+    authors: Zhi Zhou, Lan-Zhe Guo†, Pengxiao Song, Yu-Feng Li†.
+    links:
+      - label: Page
+        url: https://neurips.cc/virtual/2023/74865
+      - label: Paper
+        url: https://arxiv.org/abs/2412.12232
+      - label: BibTeX
+        url: resources/bibtex/NeurIPS23W-genmodel.txt
+  - id: NeurIPS22-usb
+    type: conference
+    topic: Adaptive learning
+    venue: NeurIPS 2022 D&B
+    cite: VzvP5a8AAAAJ:W7OEmFMy1HYC
+    title: 'USB: A Unified Semi-supervised Learning Benchmark for Classification.'
+    authors: Yi-Dong Wang*, Hao Chen*, Yue Fan*, Wang Sun, Ran Tao, Wen-Xin Hou, Ren-Jie Wang, Lin-Yi Yang, Zhi Zhou, Lan-Zhe Guo, He-Li Qi, Zhen Wu, Yu-Feng Li, Satoshi Nakamura, Wei Ye, Marios Savvides, Bhiksha Raj, Takahiro Shinozaki, Bernt Schiele, Jin-Dong Wang†, Xing Xie, Yue Zhang†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://openreview.net/forum?id=QeuwINa96C
+      - label: Code
+        url: https://github.com/microsoft/Semi-supervised-learning
+      - label: BibTeX
+        url: resources/bibtex/NeurIPS22-usb.txt
+  - id: NeurIPS21-step
+    type: conference
+    topic: Adaptive learning
+    venue: NeurIPS 2021
+    cite: VzvP5a8AAAAJ:d1gkVwhDpl0C
+    title: 'STEP: Out-of-Distribution Detection in the Presence of Limited In-Distribution Labeled Data.'
+    authors: Zhi Zhou*, Lan-Zhe Guo*, Zhan-Zhan Cheng, Yu-Feng Li†, Shi-Liang Pu.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: https://proceedings.neurips.cc/paper/2021/hash/f4334c131c781e2a6f0a5e34814c8147-Abstract.html
+      - label: Code
+        url: https://www.lamda.nju.edu.cn/code_STEP.ashx
+      - label: Poster
+        url: resources/2021/STEP-Poster.png
+      - label: Slides
+        url: resources/2021/STEP-Slide.pdf
+      - label: BibTeX
+        url: resources/bibtex/NeurIPS21-step.txt
+  - id: KDD21-limi
+    type: conference
+    topic: Adaptive learning
+    venue: KDD 2021
+    cite: VzvP5a8AAAAJ:u-x6o8ySG0sC
+    title: Learning from Imbalanced and Incomplete Supervision with Its Application to Ride-Sharing Liability Judgment.
+    authors: Lan-Zhe Guo*, Zhi Zhou*, Jie-Jing Shao, Yu-Feng Li†, and DiDi Collaborators.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: resources/2021/KDD2021-LIMI.pdf
+      - label: BibTeX
+        url: resources/bibtex/KDD21-limi.txt
+  - id: KDD20-record
+    type: conference
+    topic: Adaptive learning
+    venue: KDD 2020
+    cite: VzvP5a8AAAAJ:u5HHmVD_uO8C
+    title: 'RECORD: Resource Constrained Semi-Supervised Learning under Distribution Shift.'
+    authors: Lan-Zhe Guo, Zhi Zhou, and Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: resources/2020/KDD20-RECORD.pdf
+      - label: Code
+        url: https://www.lamda.nju.edu.cn/code_RECORD.ashx
+      - label: BibTeX
+        url: resources/bibtex/KDD20-record.txt
+  - id: FCS24-rts
+    type: journal
+    topic: Adaptive learning
+    venue: FCS 2024
+    cite: VzvP5a8AAAAJ:LkGwnXOMwfcC
+    title: 'Rts: Learning Robustly from Time Series Data with Noisy Label.'
+    authors: Zhi Zhou, Yi-Xuan Jin, Yu-Feng Li†.
+    tags:
+      - CCF-B
+    links:
+      - label: Paper
+        url: https://journal.hep.com.cn/fcs/EN/10.1007/s11704-023-3200-z
+      - label: Code
+        url: https://github.com/WNJXYK/Rts
+      - label: BibTeX
+        url: resources/bibtex/FCS24-rts.txt
+  - id: SCIS24-lamdassl
+    type: journal
+    topic: Adaptive learning
+    venue: SCIS Letter 2024
+    cite: VzvP5a8AAAAJ:ufrVoPGSRksC
+    title: 'LAMDA-SSL: A Comprehensive Semi-Supervised Learning Toolkit.'
+    authors: Lin-Han Jia, Lan-Zhe Guo†, Zhi Zhou, Yu-Feng Li†.
+    tags:
+      - CCF-A
+    links:
+      - label: Arxiv
+        url: https://arxiv.org/pdf/2208.04610.pdf
+      - label: Code
+        url: https://github.com/YGZWQZD/LAMDA-SSL
+      - label: BibTeX
+        url: resources/bibtex/SCIS24-lamdassl.txt
+  - id: JOS24-openset
+    type: journal
+    topic: Adaptive learning
+    venue: JOS 2024
+    cite: VzvP5a8AAAAJ:YsMSGLbcyi4C
+    title: Towards Robust Test-Time Adaptation for Open-Set Recognition.
+    authors: Zhi Zhou, Ding-Chu Zhang, Yu-Feng Li†, Min-Ling Zhang.
+    tags:
+      - CCF-A
+    links:
+      - label: Paper
+        url: http://www.jos.org.cn/jos/article/abstract/7009
+      - label: BibTeX
+        url: resources/bibtex/JOS24-openset.txt

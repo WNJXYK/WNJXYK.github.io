@@ -1,6 +1,7 @@
-_site/
-push.sh
+node_modules/
+dist/
+.astro/
+.wrangler/
 .DS_Store
-Gemfile.lock
-run_server.sh
-.bundle/config
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/

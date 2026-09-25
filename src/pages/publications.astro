@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PublicationFilters from '../components/PublicationFilters.astro';
+import { publications, topics } from '../data/content';
+import { scholarUrl, absoluteUrl, totalCitationBadge } from '../lib/site';
+
+const schema = {
+  '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Publications - Zhi Zhou', url: 'https://zhouz.dev/publications/', about: { '@id': 'https://zhouz.dev/#person' },
+  mainEntity: { '@type': 'ItemList', itemListElement: publications.papers.map((paper, index) => ({ '@type': 'ListItem', position: index + 1, url: `https://zhouz.dev/publications/#${paper.id}`, item: { '@type': 'ScholarlyArticle', name: paper.title, headline: paper.title, author: paper.authors.replace(/[†*]/g, '').replace(/\.$/, '').split(',').map((name) => ({ '@type': 'Person', name: name.trim() })), isPartOf: paper.venue, url: absoluteUrl(paper.links.find((link) => /^(Paper|Page|Project|Arxiv)$/i.test(link.label))?.url || `/publications/#${paper.id}`), about: paper.topic, datePublished: paper.venue.match(/\b(20\d{2})\b/)?.[1] } })) },
+};
+const keywords = publications.papers.flatMap((paper) => [paper.topic, ...(paper.tags || [])]);
+---
+<BaseLayout title="Publications - Zhi Zhou" description="Publications by Zhi Zhou on test-time intelligence, weakly-supervised learning, and neuro-symbolic AI." page="publications" schema={schema} keywords={keywords}>
+  <section id="pub">
+    <h1 class="page-heading">Publications
+      <a class="cite-link" href={scholarUrl()} aria-label="Google Scholar citations"><img class="cite-badge" src={totalCitationBadge()} alt="citations" /></a>
+      <span class="rule"></span>
+    </h1>
+    <PublicationFilters publications={publications.papers} topics={topics} />
+  </section>
+</BaseLayout>

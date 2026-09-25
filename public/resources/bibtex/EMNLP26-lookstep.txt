@@ -1,0 +1,6 @@
+@inproceedings{yu2026lookstep,
+  author    = {Yu, Kun-Yang and Li, Yingzhe and Xu, Hongyu and Tian, Shi-Yu and Zhou, Zhi and Chen, Yang and Yang, Ming and Wang, Sheng and Yu, Qing and Guo, Lan-Zhe and Li, Yu-Feng},
+  title     = {LookStep: Efficient Vision-Language Navigation with Linguistic Foresight and Event Driven Memory},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2026}
+}

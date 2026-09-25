@@ -1,0 +1,7 @@
+@inproceedings{zhou24decoop,
+    author      = {Zhou, Zhi and Yang, Ming and Shi, Jiang-Xin and Guo, Lan-Zhe and Li, Yu-Feng},
+    title       = {{D}e{C}o{O}p: Robust Prompt Tuning with Out-of-Distribution Detection},
+    booktitle   = {Proceedings of the 41st International Conference on Machine Learning},
+    pages       = {62161--62177},
+    year        = {2024}
+}

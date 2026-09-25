@@ -1,0 +1,6 @@
+@inproceedings{cheng2026symbollmfe,
+  author    = {Cheng, Zi-Jian and Jia, Ziyi and Zhou, Zhi and Li, Yu-Feng and Guo, Lan-Zhe},
+  title     = {SymboLLM-FE: LLM-Accelerated Symbolic Regression for Automated Feature Engineering on Tabular Data},
+  booktitle = {Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing},
+  year      = {2026}
+}

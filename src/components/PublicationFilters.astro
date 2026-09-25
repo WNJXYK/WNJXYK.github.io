@@ -1,0 +1,27 @@
+---
+import type { Publication } from '../data/content';
+import { slug } from '../lib/site';
+import PublicationItem from './Publication.astro';
+interface Props { publications: Publication[]; topics: string[] }
+const { publications, topics } = Astro.props as Props;
+const venueGroups: Array<[string, Publication[]]> = [
+  ['Conference Papers', publications.filter((p) => p.type === 'conference')],
+  ['Journal Papers', publications.filter((p) => p.type === 'journal')],
+  ['Workshop Papers', publications.filter((p) => p.type === 'workshop')],
+  ['Other', publications.filter((p) => !['conference', 'journal', 'workshop'].includes(p.type))],
+].filter((group): group is [string, Publication[]] => group[1].length > 0);
+---
+<div class="pubfilters">
+  <div class="seg" data-facet="rank"><span class="seg-label">Rank</span><button data-val="all" class="active">All</button><button data-val="CCF-A">CCF-A</button><button data-val="CCF-B">CCF-B</button></div>
+  <div class="seg" data-facet="role"><span class="seg-label">Author</span><button data-val="all" class="active">All</button><button data-val="first">First</button><button data-val="corr">Corresponding</button></div>
+  <div class="seg" data-facet="group"><span class="seg-label">Arrange</span><button data-val="venue" class="active">Venue</button><button data-val="year">Year</button><button data-val="topic">Topic</button></div>
+</div>
+<nav class="pub-toc" id="pub-toc" aria-label="Publication sections">
+  <span class="pub-toc-label">TOC</span>
+  {venueGroups.map(([title]) => <a href={`#pub-venue-${slug(title)}`}>{title}</a>)}
+</nav>
+<p class="hint">* equal contribution &nbsp;·&nbsp; ✉ corresponding author &nbsp;·&nbsp; <span id="pub-count" aria-live="polite">{publications.length} papers</span></p>
+<div id="pub-list">
+  {venueGroups.map(([title, items]) => <Fragment><h3 class="pub-h3" id={`pub-venue-${slug(title)}`}>{title}</h3>{items.map((pub, index) => <PublicationItem publication={pub} index={index + 1} />)}</Fragment>)}
+</div>
+<script is:inline type="application/json" id="publication-data" set:html={JSON.stringify({ publications, topics }).replace(/<\/script/gi, '<\\/script')} />

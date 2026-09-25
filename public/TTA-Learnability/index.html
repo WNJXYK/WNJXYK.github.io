@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Primary meta -->
+  <title>On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective | ICML 2026</title>
+  <meta name="description" content="The first theoretical framework for the learnability of Test-Time Adaptation (TTA) under unlabeled, non-stationary streams. Introduces (ε,δ)-Recovery Complexity and (ε,ρ)-TTA Learnability with order-wise matching minimax bounds. ICML 2026." />
+  <meta name="keywords" content="Test-Time Adaptation, TTA, Learnability, Recovery Complexity, Non-Stationary Streams, Distribution Shift, Minimax Bounds, Dynamic Regret, ICML 2026, Machine Learning Theory" />
+  <meta name="author" content="Zhi Zhou, Ming Yang, Shi-Yu Tian, Kun-Yang Yu, Lan-Zhe Guo, Yu-Feng Li" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#63158a" />
+  <link rel="canonical" href="https://zhouz.dev/TTA-Learnability/" />
+
+  <!-- Favicon (NJU purple) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2363158a'/%3E%3Ctext x='16' y='23' font-family='serif' font-size='20' font-weight='700' text-anchor='middle' fill='%23fff'%3EL%3C/text%3E%3C/svg%3E" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://zhouz.dev/TTA-Learnability/" />
+  <meta property="og:title" content="On the Learnability of Test-Time Adaptation" />
+  <meta property="og:description" content="A Recovery Complexity Perspective — the first learnability theory for TTA on non-stationary streams. ICML 2026." />
+  <meta property="og:image" content="https://zhouz.dev/TTA-Learnability/assets/illustration.png" />
+  <meta property="og:image:width" content="1800" />
+  <meta property="og:image:height" content="622" />
+  <meta property="og:image:alt" content="Framework overview: from stream model to recovery complexity to TTA learnability" />
+  <meta property="og:site_name" content="TTA-Learnability" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="zh_CN" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="On the Learnability of Test-Time Adaptation" />
+  <meta name="twitter:description" content="A Recovery Complexity Perspective — ICML 2026. The first learnability theory for TTA on non-stationary streams." />
+  <meta name="twitter:image" content="https://zhouz.dev/TTA-Learnability/assets/illustration.png" />
+  <meta name="twitter:image:alt" content="Framework overview of TTA learnability" />
+
+  <!-- Resource hints (performance) -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective",
+    "author": [
+      { "@type": "Person", "name": "Zhi Zhou" },
+      { "@type": "Person", "name": "Ming Yang" },
+      { "@type": "Person", "name": "Shi-Yu Tian" },
+      { "@type": "Person", "name": "Kun-Yang Yu" },
+      { "@type": "Person", "name": "Lan-Zhe Guo" },
+      { "@type": "Person", "name": "Yu-Feng Li" }
+    ],
+    "datePublished": "2026",
+    "publisher": { "@type": "Organization", "name": "ICML 2026" },
+    "mainEntityOfPage": "https://zhouz.dev/TTA-Learnability/",
+    "url": "https://arxiv.org/abs/2605.28057",
+    "image": "https://zhouz.dev/TTA-Learnability/assets/illustration.png",
+    "description": "The first theoretical framework for the learnability of Test-Time Adaptation under unlabeled, non-stationary streams, introducing (ε,δ)-Recovery Complexity and (ε,ρ)-TTA Learnability with order-wise matching minimax bounds."
+  }
+  </script>
+
+  <!-- Fonts (matches the FTTA / Nerfies template) -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+
+  <!-- Bulma + icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']], displayMath: [['$$','$$'], ['\\[','\\]']] },
+      svg: { fontCache: 'global' },
+      startup: { typeset: true }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <style>
+    :root {
+      --nju: #63158a;
+      --nju-dark: #4a0f66;
+      --nju-tint: rgba(99, 21, 138, 0.08);
+    }
+    body { font-family: 'Noto Sans', sans-serif; color: #4a4a4a; }
+    .publication-title { color: var(--nju); }
+    .publication-title, .title, .subtitle { font-family: 'Castoro', serif; }
+    .publication-title.is-1 { font-size: clamp(1.6rem, 3.2vw, 2.35rem); line-height: 1.25; }
+    h1.title { font-weight: 500; line-height: 1.15; }
+    .section .title { font-weight: 500; }
+    .content a { color: var(--nju); }
+    .content a:hover { color: var(--nju-dark); }
+    .publication-authors a { color: #363636; text-decoration: underline; text-decoration-style: dotted; text-underline-offset: 3px; }
+    .publication-authors a:hover { color: var(--nju); }
+    .link-block .button { background: #363636; color: #fff; border: none; }
+    .link-block .button:hover { background: #1c1c1c; color: #fff; }
+    .citation-link { display: inline-flex; align-items: center; gap: 0.3rem; }
+    .citation-link .citation-badge { height: 18px; width: auto; margin-left: 0.15rem; }
+    .content.has-text-justified p { text-align: justify; hyphens: auto; }
+    .content p { line-height: 1.75; }
+    .inter-content { max-width: 760px; margin: 0 auto; }
+    .eq-block { margin: 1.25rem 0; overflow-x: auto; }
+    table.data { margin: 1rem auto; width: 100%; max-width: 560px; font-size: 0.95rem; }
+    table.data th, table.data td { padding: 0.45rem 0.7rem; text-align: center; }
+    table.data thead th { background: #f2f2f2; border-bottom: 1px solid #dbdbdb; font-weight: 600; color: #363636; }
+    table.data tbody tr + tr { border-top: 1px solid #f0f0f0; }
+    table.data tbody td:first-child { font-family: 'Castoro', serif; }
+    .pos { color: #288c5a; font-weight: 600; }
+    .neg { color: #c53434; font-weight: 600; }
+    .note { color: #777; font-size: 0.85rem; }
+    .lang-toggle { display:inline-flex; gap: 0; font-size: 0.85rem; color: #888; }
+    .lang-toggle button { background: none; border: none; color: inherit; cursor: pointer; padding: 0 0.35rem; font: inherit; }
+    .lang-toggle button.active { color: var(--nju); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+    .lang-toggle .sep { color: #ccc; }
+    figure.figure { margin: 1.5rem auto; }
+    figure.figure img { display: block; margin: 0 auto; border: 1px solid #ececec; border-radius: 4px; }
+    figure.figure figcaption { margin-top: 0.6rem; font-size: 0.9rem; color: #777; }
+    .section-head { margin-bottom: 1.5rem; }
+    .stage-tag {
+      display: block;
+      font-family: 'Castoro', serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #363636;
+      margin: 1.75rem 0 0.5rem;
+      padding-left: 0.65rem;
+      border-left: 3px solid var(--nju);
+      text-align: left;
+    }
+    ::selection { background: rgba(99, 21, 138, 0.15); color: var(--nju-dark); }
+
+    /* TL;DR callout (subtle, academic) */
+    .tldr-box {
+      display: flex; align-items: flex-start; gap: 0.75rem;
+      background: var(--nju-tint); border: 1px solid #e8ddf0; border-left: 3px solid var(--nju);
+      border-radius: 4px; padding: 0.9rem 1.1rem; font-size: 0.98rem; line-height: 1.7;
+    }
+    .tldr-tag {
+      flex: 0 0 auto; font-family: 'Castoro', serif; font-weight: 600;
+      font-size: 0.8rem; letter-spacing: 0.05em; color: #fff;
+      background: var(--nju); border-radius: 3px; padding: 0.15rem 0.5rem; margin-top: 0.15rem;
+    }
+    /* Recovery bullets */
+    .inter-content ul { list-style: disc inside; padding-left: 0.5rem; }
+    .inter-content ul li { margin: 0.35rem 0; }
+    /* Takeaway line */
+    .takeaway {
+      margin-top: 1.5rem; padding: 0.9rem 1.1rem;
+      background: var(--nju-tint); border-left: 3px solid var(--nju); border-radius: 4px;
+      font-size: 0.98rem;
+    }
+    /* Tighten main hero bottom so TL;DR sits closer */
+    section.hero > .hero-body { padding-bottom: 1.25rem; }
+    /* BibTeX copy button */
+    .bibtex-wrap { position: relative; }
+    .copy-btn {
+      position: absolute; top: 0.6rem; right: 0.6rem;
+      display: inline-flex; align-items: center; gap: 0.35rem;
+      font-size: 0.8rem; color: #666; background: #fff;
+      border: 1px solid #dbdbdb; border-radius: 4px;
+      padding: 0.3rem 0.65rem; cursor: pointer; transition: all .15s;
+      font-family: 'Noto Sans', sans-serif;
+    }
+    .copy-btn:hover { color: var(--nju); border-color: var(--nju); }
+    .copy-btn.copied { color: #288c5a; border-color: #288c5a; }
+    .copy-btn .icon { font-size: 0.8rem; }
+  </style>
+</head>
+
+<body>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          <div class="lang-toggle" style="position:fixed; top:1.2rem; right:1.5rem; z-index:100;">
+            <button id="lang-en" class="active" type="button">EN</button>
+            <span class="sep">|</span>
+            <button id="lang-zh" type="button">中文</button>
+          </div>
+
+          <h1 class="title is-1 publication-title" data-i18n="h_title">
+            On the Learnability of Test-Time Adaptation:<br />A Recovery Complexity Perspective
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><span data-i18n="a1">Zhi Zhou</span>,</span>
+            <span class="author-block"><span data-i18n="a2">Ming Yang</span>,</span>
+            <span class="author-block"><span data-i18n="a3">Shi-Yu Tian</span>,</span>
+            <span class="author-block"><span data-i18n="a4">Kun-Yang Yu</span>,</span>
+            <span class="author-block"><span data-i18n="a5">Lan-Zhe Guo</span>,</span>
+            <span class="author-block"><span data-i18n="a6">Yu-Feng Li</span><sup>‡</sup></span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" data-i18n="h_affil">State Key Laboratory of Novel Software Technology, Nanjing University</span>
+            <br /><small><sup>‡</sup><span data-i18n="h_corr">Corresponding Author</span></small>
+            <br /><small>
+              <a href="mailto:zhouz@lamda.nju.edu.cn">zhouz@lamda.nju.edu.cn</a>, <a href="mailto:liyf@nju.edu.cn">liyf@nju.edu.cn</a>
+            </small>
+          </div>
+
+          <!-- venue + links -->
+          <div class="is-size-6" style="margin: 0.8rem 0 0.4rem; color:#888;">
+            <span data-i18n="h_venue">To appear in ICML 2026</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2605.28057" target="_blank" rel="noopener" class="external-link button is-normal is-rounded">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span data-i18n="b_paper">Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="assets/slides.pdf" target="_blank" rel="noopener" class="external-link button is-normal is-rounded">
+                  <span class="icon"><i class="fas fa-file-powerpoint"></i></span>
+                  <span data-i18n="b_slides">Slides</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="assets/poster.pdf" target="_blank" rel="noopener" class="external-link button is-normal is-rounded">
+                  <span class="icon"><i class="far fa-image"></i></span>
+                  <span data-i18n="b_poster">Poster</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://scholar.google.com/citations?user=VzvP5a8AAAAJ" target="_blank" rel="noopener" class="external-link button is-normal is-rounded citation-link">
+                  <span class="icon"><i class="ai ai-google-scholar"></i></span>
+                  <span data-i18n="b_citations">Citations</span>
+                  <img class="citation-badge" src="https://img.shields.io/endpoint?url=https%3A%2F%2Fwnjxyk-paper-citation-tracker.hf.space%2Fbadge%2Fpaper%2FVzvP5a8AAAAJ%3AblknAaTinKkC%3Ffmt%3Diconnum&amp;style=flat&amp;color=137b73&amp;labelColor=eee7d4" alt="Google Scholar citations" />
+                </a>
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TL;DR ===================== -->
+<section class="section" style="padding-top:0.75rem; padding-bottom:3rem;">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="tldr-box">
+          <span class="tldr-tag">TL;DR</span>
+          <span data-i18n="tldr_body">The first learnability theory for TTA on non-stationary streams. We define <b>(ε, δ)-Recovery Complexity</b> and <b>(ε, ρ)-TTA Learnability</b>, prove order-wise matching minimax lower / algorithmic upper bounds, and expose an intrinsic <b>adaptivity–information trade-off</b>.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ABSTRACT ===================== -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" data-i18n="s_abstract">Abstract</h2>
+        <div class="content has-text-justified">
+          <p data-i18n="abstract_body">Test-time adaptation (TTA) aims to adapt models to maintain reliable performance on non-stationary test streams without requiring labeled data. Despite its empirical success, the learnability of TTA under non-stationary streams remains unexplored. A key challenge is the lack of a principled theoretical framework that simultaneously aligns with the TTA objective and captures both continuously evolving distribution shifts and intrinsic information constraints. To address this gap, we propose the first theoretical framework for studying the learnability of TTA and introduce <b>(ε, δ)-Recovery Complexity</b> and <b>(ε, ρ)-TTA Learnability</b>. Recovery complexity measures the post-shift time needed to maintain excess risk below a target level with high probability, and is further extended to TTA learnability, which measures the long-term reliability of TTA. Within this framework, we introduce a novel discrete surrogate for non-stationary test streams, enabling a unified and tractable analysis of both gradual and abrupt shifts. We derive order-wise matching lower and upper bounds on recovery complexity, revealing fundamental limits of TTA and an intrinsic adaptivity–information trade-off. These results provide unified learnability guarantees for TTA that complement regret-based analyses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OVERVIEW FIGURE ===================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3 section-head" data-i18n="s_overview">Framework Overview</h2>
+        <figure class="figure">
+          <img src="assets/illustration.png" alt="Theoretical framework overview (Figure 1 of the paper)" style="max-width:100%;" />
+          <figcaption data-i18n="ov_caption">Figure 1: Overview of the theoretical modeling and analysis. A unified model of non-stationary test streams underpins a local analysis via (ε, δ)-Recovery Complexity, which is lifted to a global (ε, ρ)-TTA Learnability.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MOTIVATION ===================== -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-head" data-i18n="s_motivation">Motivation</h2>
+        <div class="content has-text-justified">
+          <p data-i18n="mot_p1">Test-time adaptation adapts a source model to distribution shifts at test time using <b>only unlabeled data</b> through a proxy loss (e.g., entropy), and has demonstrated empirical success across vision, tabular and language domains. Yet recent studies show that TTA can silently fail under complex, non-stationary streams — motivating a theoretical understanding of <i>when</i> TTA can remain reliable.</p>
+          <p data-i18n="mot_p2">Existing theory falls short on two fronts: (i) online-learning regret controls only <i>average</i> performance, not the per-step, post-shift reliability TTA demands; and (ii) prior TTA analyses rely on assumptions about specific algorithms or label availability, none of which jointly handles unlabeled supervision, non-stationarity, and temporal correlation. This work asks: <b>when is TTA even learnable?</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STREAM MODEL ===================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="has-text-centered"><h2 class="title is-3 section-head" data-i18n="s_stream">Modeling the Non-Stationary Stream</h2></div>
+        <div class="content has-text-justified inter-content">
+          <p data-i18n="sm_p1">We model the test stream $\mathcal{S}=\{D_t\}_{t=1}^T$ along two complementary axes — a <b>global</b> distribution-shift axis and a <b>local</b> temporal-correlation axis — captured by two analytically tractable assumptions.</p>
+
+          <p class="stage-tag" data-i18n="sm_g_t">Global · Δ_W-Quantized Distribution Shift</p>
+          <p data-i18n="sm_g_b">We adopt the Wasserstein-1 distance on $\mathcal{X}\times\mathcal{Y}$ to discretize the continuous trajectory $\{\mathcal P_t\}$ into a bounded piecewise-constant surrogate at resolution $\Delta_W$, which unifies gradual and abrupt shifts. The number of shifts is bounded by the path variation $V_T$:</p>
+          <div class="eq-block">$$ V_T = \sum_{t=1}^{T-1} W_1(\mathcal P_t, \mathcal P_{t+1}), \qquad \tilde K_S(T) \;\le\; \left\lceil \frac{2 V_T}{\Delta_W} \right\rceil. $$</div>
+
+          <p class="stage-tag" data-i18n="sm_l_t">Local · φ-Mixing Temporal Dependence</p>
+          <p data-i18n="sm_l_b">We measure the strength of temporal dependence by a $\phi$-mixing coefficient with geometric decay $\phi(i)\le\varrho^{i}$. Under this condition, temporal correlation effectively shrinks the batch size:</p>
+          <div class="eq-block">$$ B_{\text{eff}} = \frac{B}{C_\phi} \le B, \qquad C_\phi = 1 + \frac{4\sqrt{\varrho}}{1-\sqrt{\varrho}}. $$</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROXY-OPTIMAL COMPETITOR ===================== -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="has-text-centered"><h2 class="title is-3 section-head" data-i18n="s_target">A Well-Defined Target: Proxy-Optimal Competitor</h2></div>
+        <div class="content has-text-justified inter-content">
+          <p data-i18n="tg_p1">Perfect adaptation is unattainable when the proxy loss $\psi$ does not coincide with the task loss $\ell$. We therefore compete against the best proxy-optimal model within a local neighborhood $\mathcal N_r(\theta_1)$ of the source parameters, and take the resulting <b>excess risk</b> $\mathcal E_t$ as the central quantity throughout:</p>
+          <div class="eq-block">$$ \theta_t^{\star} \in \arg\min_{\theta \in \mathcal N_r(\theta_1)} \psi_t(\theta), \qquad R_t := \ell_t(\theta_t^{\star}), \qquad \mathcal E_t := \ell_t(\theta_t) - R_t. $$</div>
+          <p data-i18n="tg_p2">Our analysis hinges on a local <b>(α, ζ)-alignment</b> between the proxy and task gradients — α &gt; 0 is the alignment strength and ζ ≥ 0 an irreducible misalignment. This guarantees the proxy gradient carries a constructive descent signal for the task loss, which is the very foundation for TTA to be feasible:</p>
+          <div class="eq-block">$$ \bigl\langle \nabla \psi_t(\theta),\, \nabla \ell_t(\theta) \bigr\rangle \;\ge\; \alpha \,\|\nabla \ell_t(\theta)\|^2 - \zeta. $$</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== RECOVERY COMPLEXITY ===================== -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="has-text-centered"><h2 class="title is-3 section-head"><span data-i18n="rc_t_pre">(ε, δ)-</span>Recovery Complexity</h2></div>
+        <div class="content has-text-justified inter-content">
+          <p data-i18n="rc_p1">We introduce <b>(ε, δ)-Recovery Complexity</b> to measure the minimum number of time steps required for a TTA algorithm to reduce — and keep — its excess risk below ε with probability at least 1−δ after a distribution shift. Unlike regret, this controls the <i>length of unsatisfactory periods</i>.</p>
+          <div class="eq-block">$$ \tau(\epsilon, \delta) \;:=\; \inf\Bigl\{\, t \in \mathbb N \;:\; \sup_{u \ge t}\, \mathbb P\!\left( \mathcal E_u > \epsilon \right) \le \delta \,\Bigr\}, \quad \mathcal E_t := \ell_t(\theta_t) - R_t. $$</div>
+
+          <p data-i18n="rc_p2">We establish order-wise <b>matching</b> minimax lower and upper bounds:</p>
+          <div class="eq-block">$$ \underbrace{\tau \;\ge\; \Omega\!\left( \frac{C_\phi}{B} \cdot \frac{1}{\alpha\bigl(\sqrt{\zeta + 2\alpha\epsilon} + \sqrt{\zeta}\bigr)^2} \right)}_{\text{any algorithm}} \qquad \underbrace{\tau \;\le\; \mathcal O\!\left( \frac{C_\phi}{B\,\alpha^2 \epsilon} \log\frac{\Delta_W + \epsilon}{\epsilon} \right)}_{\text{simple SGD baseline}} $$</div>
+
+          <p data-i18n="rc_p3">The matching bounds pin down what fundamentally governs recovery:</p>
+          <ul style="max-width:680px; margin:0.5rem auto 1.25rem; line-height:1.7;">
+            <li><span data-i18n="rc_b1"><b>Error floor.</b> ζ &gt; 0 leaves a non-vanishing term as ε → 0 — misalignment caps achievable accuracy.</span></li>
+            <li><span data-i18n="rc_b2"><b>Speed.</b> τ ∝ 1/α² under a perfect proxy, and τ ∝ C<sub>φ</sub>/B through batch size and temporal correlation.</span></li>
+            <li><span data-i18n="rc_b3"><b>Near-optimal.</b> The bounds match up to a log factor, so the simple SGD baseline is already near-minimax-optimal — leaving little room for algorithmic improvement without stronger feedback.</span></li>
+          </ul>
+          <p data-i18n="rc_p4">Together, these expose an intrinsic <b>adaptivity–information trade-off</b> at the heart of TTA.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LEARNABILITY ===================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <div class="has-text-centered"><h2 class="title is-3 section-head"><span data-i18n="lb_t_pre">(ε, ρ)-</span>TTA Learnability</h2></div>
+        <div class="content has-text-justified inter-content">
+          <p data-i18n="lb_p1">A problem is <b>(ε, ρ)-learnable</b> if some algorithm keeps the fraction of time steps violating the target ε below ρ, formalizing long-term reliability over the entire stream:</p>
+          <div class="eq-block">$$ \frac{1}{T} \sum_{t=1}^{T} \mathbb P\!\left( \ell_t(\theta_t) - R_t > \epsilon \right) \;\le\; \rho. $$</div>
+
+          <p data-i18n="lb_p2">We bridge local recovery to global learnability: faster recovery or fewer shifts translate <i>directly</i> into a smaller violation rate ρ — a strong transfer principle.</p>
+          <div class="eq-block">$$ \rho \;\le\; \delta \;+\; \frac{(\tilde K_S(T)+1)\,\tau(\epsilon',\delta)}{T}, \qquad \epsilon' = \epsilon - \Lambda \Delta_W. $$</div>
+
+          <p data-i18n="lb_p3">Finally, (ε, ρ)-learnability implies a bound on the expected cumulative dynamic regret, $\mathrm{Reg}(T) \le T(\epsilon + M\rho)$. This clarifies both the connection and the two intrinsic differences from online learning: <i>persistent shifts</i> ($\Delta_W=\Omega(1)$) force linear regret, and <i>unlabeled supervision</i> injects an alignment bias no recovery time can remove — while in the benign regime ($\Delta_W\to 0$) we recover the classical sublinear $o(T)$ regret.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONCLUSION ===================== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-head" data-i18n="s_conc">Conclusion</h2>
+        <div class="content has-text-justified">
+          <p data-i18n="conc_body">We introduced the first learnability framework for test-time adaptation under unlabeled non-stationary streams, modeling global shifts via a quantized Wasserstein approximation and local dependence via a $\phi$-mixing process. Within this framework, we defined (ε, δ)-Recovery Complexity and derived nearly matching minimax lower and upper bounds, revealing how proxy alignment, target accuracy, and batch size govern recovery. Building on this, we introduced (ε, ρ)-TTA Learnability and connected it to dynamic regret, showing that persistent shifts force linear regret and that unlabeled supervision incurs an intrinsic cumulative cost. We hope this framework provides a principled foundation for future theoretical and algorithmic developments in test-time adaptation.</p>
+          <p class="takeaway" data-i18n="takeaway"><b>Takeaway.</b> Recovery complexity is the building block of TTA learnability — it pins down <i>when</i> adaptation is possible and <i>what</i> fundamentally limits it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ACKNOWLEDGEMENTS ===================== -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-head" data-i18n="s_ack">Acknowledgements</h2>
+        <div class="content has-text-justified">
+          <p data-i18n="f_ack">This research was supported by the Jiangsu Science Foundation (BK20243012, BG2024036, BK20232003), the National Natural Science Foundation of China (Grant No. 624B2068, 62576162), the Fundamental Research Funds for the Central Universities (022114380023), and the "111 Center" (No. B26023).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BIBTEX ===================== -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3">BibTeX</h2>
+    <div class="bibtex-wrap">
+      <button class="copy-btn" id="copyBibtex" type="button">
+        <span class="icon"><i class="far fa-copy"></i></span>
+        <span data-i18n="copy">Copy</span>
+      </button>
+      <pre><code id="bibtexCode">@inproceedings{zhou26learnability,
+  author       = {Zhi Zhou and Ming Yang and Shi-Yu Tian and Kun-Yang Yu and Lan-Zhe Guo and Yu-Feng Li},
+  title        = {On the Learnability of Test-Time Adaptation: A Recovery Complexity Perspective},
+  booktitle    = {Proceedings of the 43rd International Conference on Machine Learning (ICML)},
+  year         = {2026}
+}</code></pre>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content has-text-centered">
+          <p>
+            <span data-i18n="f_tmpl">This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, adapted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. Licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a> license.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== I18N ===================== -->
+<script>
+const I18N = {
+  en: {
+    h_title: "On the Learnability of Test-Time Adaptation:<br />A Recovery Complexity Perspective",
+    h_affil: "State Key Laboratory of Novel Software Technology, Nanjing University",
+    h_corr: "Corresponding Author", h_venue: "To appear in ICML 2026",    b_paper: "Paper", b_slides: "Slides", b_poster: "Poster", b_citations: "Citations",
+    copy: "Copy", copied: "Copied!",
+    a1: "Zhi Zhou", a2: "Ming Yang", a3: "Shi-Yu Tian",
+    a4: "Kun-Yang Yu", a5: "Lan-Zhe Guo", a6: "Yu-Feng Li",
+
+    tldr_body: "The first learnability theory for TTA on non-stationary streams. We define <b>(ε, δ)-Recovery Complexity</b> and <b>(ε, ρ)-TTA Learnability</b>, prove order-wise matching minimax lower / algorithmic upper bounds, and expose an intrinsic <b>adaptivity–information trade-off</b>.",
+
+    s_abstract: "Abstract",
+    abstract_body: "Test-time adaptation (TTA) aims to adapt models to maintain reliable performance on non-stationary test streams without requiring labeled data. Despite its empirical success, the learnability of TTA under non-stationary streams remains unexplored. A key challenge is the lack of a principled theoretical framework that simultaneously aligns with the TTA objective and captures both continuously evolving distribution shifts and intrinsic information constraints. To address this gap, we propose the first theoretical framework for studying the learnability of TTA and introduce <b>(ε, δ)-Recovery Complexity</b> and <b>(ε, ρ)-TTA Learnability</b>. Recovery complexity measures the post-shift time needed to maintain excess risk below a target level with high probability, and is further extended to TTA learnability, which measures the long-term reliability of TTA. Within this framework, we introduce a novel discrete surrogate for non-stationary test streams, enabling a unified and tractable analysis of both gradual and abrupt shifts. We derive order-wise matching lower and upper bounds on recovery complexity, revealing fundamental limits of TTA and an intrinsic adaptivity–information trade-off. These results provide unified learnability guarantees for TTA that complement regret-based analyses.",
+
+    s_overview: "Framework Overview",
+    ov_caption: "Figure 1: Overview of the theoretical modeling and analysis. A unified model of non-stationary test streams underpins a local analysis via (ε, δ)-Recovery Complexity, which is lifted to a global (ε, ρ)-TTA Learnability.",
+
+    s_motivation: "Motivation",
+    mot_p1: "Test-time adaptation adapts a source model to distribution shifts at test time using <b>only unlabeled data</b> through a proxy loss (e.g., entropy), and has demonstrated empirical success across vision, tabular and language domains. Yet recent studies show that TTA can silently fail under complex, non-stationary streams — motivating a theoretical understanding of <i>when</i> TTA can remain reliable.",
+    mot_p2: "Existing theory falls short on two fronts: (i) online-learning regret controls only <i>average</i> performance, not the per-step, post-shift reliability TTA demands; and (ii) prior TTA analyses rely on assumptions about specific algorithms or label availability, none of which jointly handles unlabeled supervision, non-stationarity, and temporal correlation. This work asks: <b>when is TTA even learnable?</b>",
+
+    s_stream: "Modeling the Non-Stationary Stream",
+    sm_p1: "We model the test stream $\\mathcal{S}=\\{D_t\\}_{t=1}^T$ along two complementary axes — a <b>global</b> distribution-shift axis and a <b>local</b> temporal-correlation axis — captured by two analytically tractable assumptions.",
+    sm_g_t: "Global · Δ_W-Quantized Distribution Shift",
+    sm_g_b: "We adopt the Wasserstein-1 distance on $\\mathcal{X}\\times\\mathcal{Y}$ to discretize the continuous trajectory $\\{\\mathcal P_t\\}$ into a bounded piecewise-constant surrogate at resolution $\\Delta_W$, which unifies gradual and abrupt shifts. The number of shifts is bounded by the path variation $V_T$:",
+    sm_l_t: "Local · φ-Mixing Temporal Dependence",
+    sm_l_b: "We measure the strength of temporal dependence by a $\\phi$-mixing coefficient with geometric decay $\\phi(i)\\le\\varrho^{i}$. Under this condition, temporal correlation effectively shrinks the batch size:",
+
+    s_target: "A Well-Defined Target: Proxy-Optimal Competitor",
+    tg_p1: "Perfect adaptation is unattainable when the proxy loss $\\psi$ does not coincide with the task loss $\\ell$. We therefore compete against the best proxy-optimal model within a local neighborhood $\\mathcal N_r(\\theta_1)$ of the source parameters, and take the resulting <b>excess risk</b> $\\mathcal E_t$ as the central quantity throughout:",
+    tg_p2: "Our analysis hinges on a local <b>(α, ζ)-alignment</b> between the proxy and task gradients — α &gt; 0 is the alignment strength and ζ ≥ 0 an irreducible misalignment. This guarantees the proxy gradient carries a constructive descent signal for the task loss, which is the very foundation for TTA to be feasible:",
+
+    rc_t_pre: "(ε, δ)-",
+    rc_p1: "We introduce <b>(ε, δ)-Recovery Complexity</b> to measure the minimum number of time steps required for a TTA algorithm to reduce — and keep — its excess risk below ε with probability at least 1−δ after a distribution shift. Unlike regret, this controls the <i>length of unsatisfactory periods</i>.",
+    rc_p2: "We establish order-wise <b>matching</b> minimax lower and upper bounds:",
+    rc_p3: "The matching bounds pin down what fundamentally governs recovery:",
+    rc_b1: "<b>Error floor.</b> ζ &gt; 0 leaves a non-vanishing term as ε → 0 — misalignment caps achievable accuracy.",
+    rc_b2: "<b>Speed.</b> τ ∝ 1/α² under a perfect proxy, and τ ∝ C<sub>φ</sub>/B through batch size and temporal correlation.",
+    rc_b3: "<b>Near-optimal.</b> The bounds match up to a log factor, so the simple SGD baseline is already near-minimax-optimal — leaving little room for algorithmic improvement without stronger feedback.",
+    rc_p4: "Together, these expose an intrinsic <b>adaptivity–information trade-off</b> at the heart of TTA.",
+
+    lb_t_pre: "(ε, ρ)-",
+    lb_p1: "A problem is <b>(ε, ρ)-learnable</b> if some algorithm keeps the fraction of time steps violating the target ε below ρ, formalizing long-term reliability over the entire stream:",
+    lb_p2: "We bridge local recovery to global learnability: faster recovery or fewer shifts translate <i>directly</i> into a smaller violation rate ρ — a strong transfer principle.",
+    lb_p3: "Finally, (ε, ρ)-learnability implies a bound on the expected cumulative dynamic regret, $\\mathrm{Reg}(T) \\le T(\\epsilon + M\\rho)$. This clarifies both the connection and the two intrinsic differences from online learning: <i>persistent shifts</i> ($\\Delta_W=\\Omega(1)$) force linear regret, and <i>unlabeled supervision</i> injects an alignment bias no recovery time can remove — while in the benign regime ($\\Delta_W\\to 0$) we recover the classical sublinear $o(T)$ regret.",
+
+    s_conc: "Conclusion",
+    conc_body:"We introduced the first learnability framework for test-time adaptation under unlabeled non-stationary streams, modeling global shifts via a quantized Wasserstein approximation and local dependence via a $\\phi$-mixing process. Within this framework, we defined (ε, δ)-Recovery Complexity and derived nearly matching minimax lower and upper bounds, revealing how proxy alignment, target accuracy, and batch size govern recovery. Building on this, we introduced (ε, ρ)-TTA Learnability and connected it to dynamic regret, showing that persistent shifts force linear regret and that unlabeled supervision incurs an intrinsic cumulative cost. We hope this framework provides a principled foundation for future theoretical and algorithmic developments in test-time adaptation.",
+    takeaway: "<b>Takeaway.</b> Recovery complexity is the building block of TTA learnability — it pins down <i>when</i> adaptation is possible and <i>what</i> fundamentally limits it.",
+
+    s_ack: "Acknowledgements",
+    f_ack: "This research was supported by the Jiangsu Science Foundation (BK20243012, BG2024036, BK20232003), the National Natural Science Foundation of China (Grant No. 624B2068, 62576162), the Fundamental Research Funds for the Central Universities (022114380023), and the \"111 Center\" (No. B26023).",
+    f_tmpl: "This page was built using the <a href=\"https://github.com/eliahuhorwitz/Academic-project-page-template\" target=\"_blank\">Academic Project Page Template</a>, adapted from the <a href=\"https://nerfies.github.io\" target=\"_blank\">Nerfies</a> project page. Licensed under a <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\">CC BY-SA 4.0</a> license."
+  },
+  zh: {
+    h_title: "测试时适应的可学习性：<br />从恢复复杂度的视角",
+    h_affil: "计算机软件新技术国家重点实验室，南京大学",
+    h_corr: "通讯作者", h_venue: "ICML 2026 录用",
+    b_paper: "论文", b_slides: "幻灯片", b_poster: "海报", b_citations: "引用",
+    copy: "复制", copied: "已复制",
+    a1: "周植", a2: "杨铭", a3: "田时雨",
+    a4: "于坤杨", a5: "郭兰哲", a6: "李宇峰",
+
+    tldr_body: "首个关于非平稳数据流上 TTA 可学习性的理论。文中给出 <b>（ε, δ）-恢复复杂度</b>与<b>（ε, ρ）-TTA 可学习性</b>两个概念，证明阶数匹配的极小化极大下界与算法上界，并指出 TTA 固有的<b>“适应性—信息”权衡</b>。",
+
+    s_abstract: "摘要",
+    abstract_body: "测试时适应（TTA）希望模型在无标签的非平稳测试流上始终保持可靠性能。尽管经验上成果颇丰，TTA 在非平稳流上的可学习性至今鲜有研究。难点在于：缺乏一个既贴合 TTA 目标、又能同时描述连续分布漂移与内在信息约束的原则性理论框架。本文为此提出首个 TTA 可学习性理论框架，并引入<b>（ε, δ）-恢复复杂度</b>与<b>（ε, ρ）-TTA 可学习性</b>两个概念。前者衡量发生分布漂移后，以高概率把超额风险压在目标值以下所需的时间；后者则从整段流的角度衡量 TTA 的长期可靠性。框架中给出一种非平稳测试流的离散化代理，使渐变漂移与突变漂移都能在统一的框架下分析。本文进一步推导出恢复复杂度阶数匹配的上下界，揭示 TTA 的根本极限及其固有的“适应性—信息”权衡，从而给出与遗憾分析互补的统一可学习性保证。",
+
+    s_overview: "框架总览",
+    ov_caption: "图 1：本文理论建模与分析的总览。由非平稳测试流的统一模型出发，先做局部的（ε, δ）-恢复复杂度分析，再提升到全局的（ε, ρ）-TTA 可学习性。",
+
+    s_motivation: "研究动机",
+    mot_p1: "测试时适应仅凭<b>无标签数据</b>，借助代理损失（如熵）在测试阶段让源模型适应分布漂移，已在视觉、表格、语言等多个领域取得可观的经验效果。但近期研究表明，面对复杂、非平稳的数据流，TTA 可能会悄然失效，这促使人们从理论上弄清：TTA <i>何时</i>才能保持可靠。",
+    mot_p2: "现有理论存在两点不足：(i) 在线学习的遗憾只反映<i>平均</i>性能，描述不了 TTA 所要求的逐步、漂移后可靠性；(ii) 已有的 TTA 分析要么针对特定算法、要么假定标签可得，没有一种能同时兼顾无标签监督、非平稳性与时间相关性。本文要回答的问题是：<b>TTA 何时才是可学习的？</b>",
+
+    s_stream: "非平稳数据流建模",
+    sm_p1: "本文从两个互补的维度对测试流 $\\mathcal{S}=\\{D_t\\}_{t=1}^T$ 建模：<b>全局</b>的分布漂移与<b>局部</b>的时间相关，并分别用两个便于分析的假设加以描述。",
+    sm_g_t: "全局 · 基于 Δ_W 的量化分布漂移",
+    sm_g_b: "在 $\\mathcal{X}\\times\\mathcal{Y}$ 上采用 Wasserstein-1 距离，把连续轨迹 $\\{\\mathcal P_t\\}$ 在分辨率 $\\Delta_W$ 下离散成有界的分段常数代理，从而把渐变漂移与突变漂移统一起来。漂移次数由路径变差 $V_T$ 给出上界：",
+    sm_l_t: "局部 · φ-混合时间依赖",
+    sm_l_b: "用几何衰减的 $\\phi$-混合系数 $\\phi(i)\\le\\varrho^{i}$ 衡量时间依赖的强弱。在这一条件下，时间相关性会有效压缩 batch 大小：",
+
+    s_target: "定义明确的比较目标：代理最优竞争者",
+    tg_p1: "当代理损失 $\\psi$ 与任务损失 $\\ell$ 不一致时，完美的适应是不可达的。因此，本文在源参数的局部邻域 $\\mathcal N_r(\\theta_1)$ 内，与“代理最优”的模型相比较，并把由此得到的<b>超额风险</b> $\\mathcal E_t$ 作为全文的核心量：",
+    tg_p2: "分析的关键是代理梯度与任务梯度之间的局部 <b>(α, ζ)-对齐</b>条件：α &gt; 0 表示对齐强度，ζ ≥ 0 是无法消除的错位。它保证代理梯度能为任务损失提供有效的下降方向，是 TTA 之所以可行的根基：",
+
+    rc_t_pre: "（ε, δ）-",
+    rc_p1: "<b>（ε, δ）-恢复复杂度</b>衡量的是：发生分布漂移后，TTA 算法至少要以 1−δ 的概率把超额风险压到 ε 以下并维持住，所需的最少时间步数。与遗憾不同，它衡量的是<i>性能不达标的时段有多长</i>。",
+    rc_p2: "本文给出阶数<b>匹配</b>的极小化极大下界与上界：",
+    rc_p3: "这对匹配的上下界，把决定恢复快慢的根本因素交代清楚：",
+    rc_b1: "<b>误差下限。</b>当 ε → 0 时，ζ &gt; 0 会留下一个无法消去的项，错位给可达精度封了顶。",
+    rc_b2: "<b>速度。</b>代理完美对齐时 τ ∝ 1/α²；此外 τ 以 C<sub>φ</sub>/B 的形式依赖于 batch 大小与时间相关性。",
+    rc_b3: "<b>近似最优。</b>上下界除一个对数因子外完全匹配，简单的 SGD 基线已经接近极小化极大最优；在缺少更强反馈的情况下，算法层面的改进空间十分有限。",
+    rc_p4: "这些结果共同点出 TTA 固有的<b>“适应性—信息”权衡</b>。",
+
+    lb_t_pre: "（ε, ρ）-",
+    lb_p1: "若存在某个算法，使违反目标 ε 的时间步比例不超过 ρ，则称该问题<b>（ε, ρ）-可学习</b>。这一概念把“整段流上的长期可靠性”落到了实处：",
+    lb_p2: "局部恢复可以顺畅地过渡到全局可学习性：恢复越快或漂移越少，违反率 ρ 就<i>相应</i>越小，这是一条很强的传递性质。",
+    lb_p3: "最后，（ε, ρ）-可学习性蕴含期望累积动态遗憾的一个界：$\\mathrm{Reg}(T) \\le T(\\epsilon + M\\rho)$。这既点明了与在线学习的联系，也指出了两点本质差异：<i>持续漂移</i>（$\\Delta_W=\\Omega(1)$）会迫使遗憾线性增长；<i>无标签监督</i>带来的对齐偏置，再多恢复时间也消不掉；而在漂移趋于零（$\\Delta_W\\to 0$）的良好情形下，又回到经典的次线性 $o(T)$ 遗憾。",
+
+    s_conc: "结论",
+    conc_body:"本文针对无标签非平稳流，给出首个 TTA 可学习性框架：用 Wasserstein 量化近似描述全局漂移，用 $\\phi$-混合过程描述局部依赖。在此框架下，定义了（ε, δ）-恢复复杂度，推导出近紧的极小化极大上下界，揭示了代理对齐、目标精度与 batch 大小如何决定恢复速度；进而提出（ε, ρ）-TTA 可学习性并与动态遗憾建立联系，说明持续漂移会迫使遗憾线性增长、无标签监督则会带来内在的累积代价。希望这一框架能为日后 TTA 的理论与算法研究打下基础。",
+    takeaway: "<b>一句话总结。</b>恢复复杂度是 TTA 可学习性的基石，它回答了两件事：适应<i>何时</i>可行，以及<i>什么</i>在根本上限制了适应。",
+
+    s_ack: "致谢",
+    f_ack: "本研究受以下项目资助：江苏省科学基金（BK20243012、BG2024036、BK20232003）；国家自然科学基金（624B2068、62576162）；中央高校基本科研业务费（022114380023）；高等学校学科创新引智计划“111 计划”（B26023）。",
+    f_tmpl: "本页面基于 <a href=\"https://github.com/eliahuhorwitz/Academic-project-page-template\" target=\"_blank\">Academic Project Page Template</a> 构建，改编自 <a href=\"https://nerfies.github.io\" target=\"_blank\">Nerfies</a> 项目页。采用 <a rel=\"license\" href=\"http://creativecommons.org/licenses/by-sa/4.0/\" target=\"_blank\">CC BY-SA 4.0</a> 许可。"
+  }
+};
+
+function applyLang(lang) {
+  document.documentElement.lang = (lang === 'zh') ? 'zh-CN' : 'en';
+  document.querySelectorAll('[data-i18n]').forEach(function(el){
+    var key = el.getAttribute('data-i18n');
+    if (I18N[lang][key] !== undefined) el.innerHTML = I18N[lang][key];
+  });
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  document.getElementById('lang-zh').classList.toggle('active', lang === 'zh');
+  if (window.MathJax && window.MathJax.typesetPromise) {
+    window.MathJax.typesetPromise();
+  }
+}
+document.getElementById('lang-en').addEventListener('click', function(){ applyLang('en'); });
+document.getElementById('lang-zh').addEventListener('click', function(){ applyLang('zh'); });
+
+// BibTeX copy button (with fallback for non-secure HTTP context)
+function copyToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(text);
+  }
+  // Fallback: temporary textarea + execCommand
+  return new Promise(function (resolve, reject) {
+    var ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.top = '-9999px';
+    document.body.appendChild(ta);
+    ta.focus(); ta.select();
+    try { document.execCommand('copy'); resolve(); }
+    catch (e) { reject(e); }
+    document.body.removeChild(ta);
+  });
+}
+document.getElementById('copyBibtex').addEventListener('click', function () {
+  var code = document.getElementById('bibtexCode').textContent;
+  var btn = this, label = btn.querySelector('span:last-child'), icon = btn.querySelector('i');
+  var lang = document.documentElement.lang === 'zh-CN' ? 'zh' : 'en';
+  copyToClipboard(code).then(function () {
+    btn.classList.add('copied');
+    icon.className = 'fas fa-check';
+    label.textContent = I18N[lang].copied;
+    setTimeout(function () {
+      btn.classList.remove('copied');
+      icon.className = 'far fa-copy';
+      label.textContent = I18N[lang].copy;
+    }, 1500);
+  }).catch(function(){ /* silently ignore */ });
+});
+</script>
+</body>
+</html>

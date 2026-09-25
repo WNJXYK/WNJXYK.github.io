@@ -1,0 +1,6 @@
+@inproceedings{yang26nesyroute,
+    author    = {Yang, Ming and Zhou, Zhi and Tian, Shi-Yu and Yu, Kun-Yang and Guo, Lan-Zhe and Li, Yu-Feng},
+    title     = {NeSy-Route: A Neuro-Symbolic Benchmark for Constrained Route Planning in Remote Sensing},
+    booktitle = {Proceedings of the European Conference on Computer Vision},
+    year      = {2026}
+}

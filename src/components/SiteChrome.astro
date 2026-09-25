@@ -1,0 +1,18 @@
+---
+import { site, rootUrl } from '../data/content';
+const { current } = Astro.props;
+const currentPath = current || Astro.url.pathname;
+---
+<header id="masthead">
+  <nav class="navbar navbar-expand-lg masthead" data-bs-theme="dark">
+    <div class="container">
+      <a class="navbar-brand" href={rootUrl(site.brand.href || 'index.html')}>{site.brand.name} <span class="cn">{site.brand.name_cn}</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          {site.nav.map((item) => <li class="nav-item"><a class:list={["nav-link", { active: item.href === currentPath }]} href={rootUrl(item.href)} data-match={item.href}>{item.label}</a></li>)}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

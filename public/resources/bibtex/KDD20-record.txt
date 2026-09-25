@@ -1,0 +1,7 @@
+@inproceedings{guo20record,
+    author    = {Guo, Lan-Zhe and Zhou, Zhi and Li, Yu-Feng},
+    title     = {{RECORD}: Resource Constrained Semi-Supervised Learning under Distribution Shift},
+    booktitle = {Proceedings of the 26th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+    pages     = {1636--1644},
+    year      = {2020}
+}

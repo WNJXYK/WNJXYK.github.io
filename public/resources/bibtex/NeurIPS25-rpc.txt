@@ -1,0 +1,6 @@
+@inproceedings{zhou25rpc,
+    author    = {Zhou, Zhi and Tan, Yuhao and Li, Zenan and Yao, Yuan and Guo, Lan-Zhe and Li, Yu-Feng and Ma, Xiaoxing},
+    title     = {A Theoretical Study on Bridging Internal Probability and Self-Consistency for {LLM} Reasoning},
+    booktitle = {Advances in Neural Information Processing Systems},
+    year      = {2025}
+}

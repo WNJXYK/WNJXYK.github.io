@@ -1,0 +1,6 @@
+@inproceedings{jia26pretexttask,
+    author    = {Jia, Lin-Han and Han, Siyu and Hu, Wen-Chao and Shao, Jie-Jing and Wei, Wen-Da and Zhou, Zhi and Guo, Lan-Zhe and Li, Yu-Feng},
+    title     = {Quantitative Estimation of Target Task Performance from Unsupervised Pretext Task in Semi/Self-Supervised Learning},
+    booktitle = {Proceedings of the 43rd International Conference on Machine Learning},
+    year      = {2026}
+}
