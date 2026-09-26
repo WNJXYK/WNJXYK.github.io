@@ -16,6 +16,8 @@ export interface Publication {
   venue: string;
   cite?: string;
   img?: string;
+  /** Generated infographic used only when the publication has no manual media. */
+  aiImg?: string;
   title: string;
   authors: string;
   tags?: string[];
@@ -105,7 +107,16 @@ export function trustedHtml(value: string): string {
 export const site = readYaml<SiteData>('content/site.yaml');
 export const about = readYaml<AboutData>('content/about.yaml');
 export const news = readYaml<NewsData>('content/news.yaml');
-export const publications = readYaml<{ papers: Publication[] }>('content/publications.yaml');
+export const publications = (() => {
+  const data = readYaml<{ papers: Publication[] }>('content/publications.yaml');
+  return {
+    ...data,
+    papers: data.papers.map((paper) => {
+      const aiImg = `images/paper-ai/${paper.id}.png`;
+      return !paper.img && fs.existsSync(path.join(root, 'public', aiImg)) ? { ...paper, aiImg } : paper;
+    }),
+  };
+})();
 export const selected = readYaml<SelectedData>('content/selected.yaml');
 export const projects = readYaml<ProjectsData>('content/projects.yaml');
 export const academics = readYaml<AcademicsData>('content/academics.yaml');

@@ -16,7 +16,7 @@ const slug = (value: string) => String(value).toLowerCase().replace(/&/g, 'and')
 const yearOf = (publication: Publication) => publication.venue.match(/\b(20\d{2})\b/)?.[1] || 'Other';
 
 interface Link { label: string; url: string }
-interface Publication { id: string; type: string; topic?: string; venue: string; cite?: string; title: string; authors: string; tags?: string[]; links: Link[] }
+interface Publication { id: string; type: string; topic?: string; venue: string; cite?: string; img?: string; aiImg?: string; title: string; authors: string; tags?: string[]; links: Link[] }
 interface PublicationData { publications: Publication[]; topics: string[] }
 
 function externalizeLinks(root: ParentNode = document) {
@@ -35,9 +35,26 @@ function linkHtml(links: Link[]) {
   }).join('');
 }
 
+function publicationMediaHtml(publication: Publication) {
+  const source = publication.img || publication.aiImg;
+  if (!source) return '';
+  const src = rootUrl(source);
+  const video = /\.(?:mp4|webm|ogv|mov|m4v)(?:[?#]|$)/i.test(src);
+  const thumbnailSrc = video && !src.includes('#') ? `${src}#t=0.1` : src;
+  const title = escapeHtml(publication.title || publication.venue);
+  const media = video
+    ? `<video src="${escapeHtml(thumbnailSrc)}" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1"></video>`
+    : `<img src="${escapeHtml(src)}" alt="${title}" loading="lazy" decoding="async">`;
+  const hint = video
+    ? '<svg viewBox="0 0 16 16" width="14" height="14"><path d="M5 2.5 13 8l-8 5.5Z" fill="currentColor" /></svg>'
+    : '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 6V2h4m4 0h4v4M2 10v4h4m4 0h4v-4" /></svg>';
+  return `<button type="button" class="thumb pub-media" data-media-preview data-media-src="${escapeHtml(src)}" data-media-kind="${video ? 'video' : 'image'}" data-media-title="${title}" aria-label="Preview ${video ? 'video' : 'image'}: ${title}" aria-haspopup="dialog">${media}<span class="pub-media__hint" aria-hidden="true">${hint}</span></button>`;
+}
+
 function publicationRow(publication: Publication, index: number) {
   const tags = (publication.tags || []).map((tag) => `<span class="tag ${/^(CCF|CAAI)-[ABC]$/.test(tag.trim()) ? 'rank' : 'note'}">${escapeHtml(tag)}</span>`).join('');
-  return `<div class="pub-row" id="${escapeHtml(publication.id)}" data-pub-id="${escapeHtml(publication.id)}"><span class="idx">${index}.</span><div class="pub-body"><div class="pub-meta"><span class="venue-badge">${escapeHtml(publication.venue)}</span>${tags}</div><b class="ttl">${escapeHtml(publication.title)}</b><span class="au">${enhanceAuthors(publication.authors)}</span><span class="lk">${linkHtml(publication.links)}</span></div></div>`;
+  const media = publicationMediaHtml(publication);
+  return `<div class="pub-row${media ? ' pub-row--media' : ''}" id="${escapeHtml(publication.id)}" data-pub-id="${escapeHtml(publication.id)}"><span class="idx">${index}.</span>${media ? `<div class="pub-row-media">${media}</div>` : ''}<div class="pub-body"><div class="pub-meta"><span class="venue-badge">${escapeHtml(publication.venue)}</span>${tags}</div><b class="ttl">${escapeHtml(publication.title)}</b><span class="au">${enhanceAuthors(publication.authors)}</span><span class="lk">${linkHtml(publication.links)}</span></div></div>`;
 }
 
 function setupPublicationFilters() {
