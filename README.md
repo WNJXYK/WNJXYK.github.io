@@ -43,13 +43,18 @@ For new images referenced by content YAML, place the file under `public/images/`
 
 ### Add a publication
 
+AI-assisted updates follow [AGENTS.md](AGENTS.md) and the [publication AI image guide](docs/publication-ai-images.md). A new paper includes a companion AI infographic by default.
+
 1. Add the paper to `content/publications.yaml` with a unique `id`.
 2. Add its BibTeX file under `public/resources/bibtex/` (the existing source copy is under `resources/bibtex/`).
 3. Add a `BibTeX` link such as `/resources/bibtex/Example26-paper.txt`.
-4. Optionally add the ID to `content/selected.yaml`.
-5. Run `npm run check && npm run build`; the build validates duplicate/missing selected IDs and local resource references.
+4. Read the paper, generate and inspect its infographic using the guide, then save it as `public/images/paper-ai/<id>.png`. Record the sources and final prompt in `docs/paper-ai/<id>.md`.
+5. Optionally add the ID to `content/selected.yaml`.
+6. Run `npm run check && npm run build`; the build validates duplicate/missing selected IDs and local resource references. Preview the list, filters, and image lightbox on desktop and mobile.
 
-The optional `img` field accepts a local or external image URL, or a direct video URL (`.mp4`, `.webm`, `.ogv`, `.mov`, `.m4v`, including query strings). Selected publication thumbnails open in a lightbox. Videos play silently while the thumbnail is visible; the lightbox provides playback controls. Browsers with reduced motion enabled keep thumbnails paused.
+The optional `img` field accepts a local or external image URL, or a direct video URL (`.mp4`, `.webm`, `.ogv`, `.mov`, `.m4v`, including query strings). Manual `img` takes priority; without it, the data layer discovers `public/images/paper-ai/<id>.png` as the fallback. No YAML `aiImg` entry is needed. Astro discovers existing files at build time; it does not generate images.
+
+Publication thumbnails open in a lightbox. Videos play silently while the thumbnail is visible; the lightbox provides playback controls. Browsers with reduced motion enabled keep thumbnails paused.
 
 ### Cloudflare Pages deployment
 
@@ -105,6 +110,16 @@ npm run preview  # 预览生产构建
 以 `_html` 结尾的字段、名为 `html` 或 `text` 的字段，以及 `content/research.html` 会作为可信 HTML 输出；其他普通字段由 Astro 自动转义。
 
 在 YAML 中新增图片时，请把文件放在 `public/images/` 下，并使用网站根路径，例如文件 `public/images/paper-logo/MyPaper.png` 对应 `img: images/paper-logo/MyPaper.png`。只放在仓库根目录 `images/` 下的文件不会自动发布。
+
+### 新增论文与 AI 配图
+
+新增论文时，助手默认按 [AGENTS.md](AGENTS.md) 和 [论文 AI 配图规范](docs/publication-ai-images.md) 同步生成配图：先核实论文内容，再用高信息密度、古朴线稿风格展示研究问题、技术方案和核心 Idea。图内不显示会议、期刊、发表年份或内部 ID。
+
+- 最终图片：`public/images/paper-ai/<论文 id>.png`。
+- 来源与最终提示词：`docs/paper-ai/<论文 id>.md`。
+- 手动 `img`（包括视频）优先；未设置时，数据层自动发现同 ID 的 AI 图，无需填写 `aiImg`。
+- Astro 构建只发现已有图片；新增 YAML 记录本身不会调用图片生成服务。
+- 更新后检查桌面、手机、筛选与灯箱，运行 `npm run check` 和 `npm run build`。
 
 ### Cloudflare Pages 部署
 
